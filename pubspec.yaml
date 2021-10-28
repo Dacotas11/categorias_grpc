@@ -20,9 +20,9 @@ dependencies:
   intl: ^0.17.0
 dependency_overrides:
   protobuf:
-    path: ../protobuf2.0
+    git: https://github.com/Dacotas11/andy_protobuf
   protoc_plugin:
-    path: ../protoc_plugin
+    git: https://github.com/Dacotas11/andy_protoc
 #   path: ^1.8.0
 
 dev_dependencies:

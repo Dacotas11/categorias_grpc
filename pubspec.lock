@@ -319,16 +319,20 @@ packages:
   protobuf:
     dependency: "direct main"
     description:
-      path: "../protobuf2.0"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "1023a3c510949bb6f32a9ef40833dd7f7c739f6e"
+      url: "https://github.com/Dacotas11/andy_protobuf"
+    source: git
     version: "2.0.0"
   protoc_plugin:
     dependency: "direct main"
     description:
-      path: "../protoc_plugin"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "1a3fe9f2a6a9a40bdee5d44f3be069e5c135758e"
+      url: "https://github.com/Dacotas11/andy_protoc"
+    source: git
     version: "20.0.0-nullsafety.1"
   pub_semver:
     dependency: transitive
