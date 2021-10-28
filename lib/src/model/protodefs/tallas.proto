@@ -1,0 +1,43 @@
+syntax = "proto3";
+import "lib/src/model/protodefs/filter.proto";
+import "lib/src/model/protodefs/shared.proto";
+package grpc.bits.io.tallassrv;
+
+service TallasSrv{
+    rpc AddUpdateTallas(AddUpdateTallasRequest) returns (AddUpdateTallasResponse);
+    rpc ConsultarTallas(grpc.bits.io.filter.FilterRequest) returns (ConsultarTallasResponse);
+    rpc DeleteTallas(DeleteTallasRequest) returns (DeleteTallasResponse);
+        
+}
+message AddUpdateTallasRequest {Tallas data= 1; Tallas  origndata= 2; grpc.bits.io.shared.UserDataDetail userdata=3; grpc.bits.io.shared.DeletedInfo deletedinfo=4;}
+message AddUpdateTallasResponse {Tallas data= 1;grpc.bits.io.shared.DeletedInfoResponse  deleteInfoResponse=2;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+message ConsultarTallasRequest {string queryStr= 1;}
+message ConsultarTallasResponse {repeated Tallas data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6;}
+message DeleteTallasRequest {string id= 1;}
+message DeleteTallasResponse {string data= 1;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+
+ message Tallas 
+{
+ string parent = 1;
+ string nombre = 2;
+ string path = 3;
+ string childrens = 4;
+ string jsonpathdata = 5;
+ string padrespath = 6;
+ string title = 7;
+ string urlimage = 8; 
+ } 
+  
+
+enum  SelectableColumnsTallas
+{
+  allColumns=0; 
+  parent = 1;
+  nombre = 2;
+  path = 3;
+  childrens = 4;
+  jsonpathdata = 5;
+  padrespath = 6;
+  title = 7;
+  urlimage = 8;}
+  
