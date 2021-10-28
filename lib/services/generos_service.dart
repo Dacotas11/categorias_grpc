@@ -89,7 +89,7 @@ np_genero.id,np_genero.descripcion
     ConsultarGenerosResponse response = ConsultarGenerosResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Generos(), request, sqlFilter, 'id');
+      sqlFilter = buildFilter(Generos(), request, sqlFilter, 'rowid');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

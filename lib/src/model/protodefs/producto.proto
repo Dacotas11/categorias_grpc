@@ -1,0 +1,148 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "lib/src/model/protodefs/filter.proto";
+import "lib/src/model/protodefs/shared.proto";
+package grpc.bits.io.productosrv;
+
+service ProductoSrv{
+    rpc AddUpdateProducto(AddUpdateProductoRequest) returns (AddUpdateProductoResponse);
+    rpc ConsultarProducto(grpc.bits.io.filter.FilterRequest) returns (ConsultarProductoResponse);
+    rpc DeleteProducto(DeleteProductoRequest) returns (DeleteProductoResponse);
+        
+}
+message AddUpdateProductoRequest {Producto data= 1; Producto  origndata= 2; grpc.bits.io.shared.UserDataDetail userdata=3; grpc.bits.io.shared.DeletedInfo deletedinfo=4;}
+message AddUpdateProductoResponse {Producto data= 1;grpc.bits.io.shared.DeletedInfoResponse  deleteInfoResponse=2;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+message ConsultarProductoRequest {string queryStr= 1;}
+message ConsultarProductoResponse {repeated Producto data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6;}
+message DeleteProductoRequest {string id= 1;}
+message DeleteProductoResponse {string data= 1;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+
+ message Producto 
+{
+ int32 producto_id = 1;
+ string nombre = 2;
+ string prod_desc = 3;
+ google.protobuf.Timestamp fecha = 4;
+ string prod_nombre = 5;
+ double prod_descuento_max = 6;
+ bool prod_gravado = 7;
+ bool prod_servicio = 8;
+ bool prod_digi_cant = 9;
+ bool prod_preg_unidad = 10;
+ string prod_unidad_compra = 11;
+ string prod_unidad_venta = 12;
+ string prod_referencia = 13;
+ bool prod_digitar_descripcion = 14;
+ string prod_codigo_barra = 15;
+ int64 prod_existencia = 16;
+ string idsubcategoria = 17;
+ bool prod_acepta_existencia_negativa = 18;
+ string idimpuesto = 19;
+ google.protobuf.Timestamp prod_fecha_actualizacion = 20;
+ double prod_porc_costo_indirecto = 21;
+ double prod_ult_costo_directo = 22;
+ int64 idtipoproducto = 23;
+ bool prod_itbis_incluido_precio = 24;
+ double prod_margen_beneficio = 25;
+ double prod_unidades_vendidas = 26;
+ int32 prod_dia_plazo_entrega = 27;
+ int64 idindicacion = 28;
+ int64 familia_cod = 29;
+ string prod_cod_referencia_proveedor = 30;
+ double prod_nivel_reorden = 31;
+ int64 idcategoria = 32;
+ double prod_precio_venta = 33;
+ double factor_conversion_venta = 34;
+ bool controlado = 35;
+ double factor_conversion_compra = 36;
+ string prod_ubicacion = 37;
+ double prod_peso_neto = 38;
+ string pac_desc = 39;
+ bool se_detalla = 40;
+ bool consignado = 41;
+ int64 formula_margen = 42;
+ string prod_codbarra2 = 43;
+ string prod_codbarra3 = 44;
+ string prod_codigo_referencia = 45;
+ string suplidor = 46;
+ string marca = 47;
+ int64 idproveedor = 48;
+ double margen_fijo = 49;
+ bool mostrar_en_gasto = 50;
+ bool mostrar_en_facturacion = 51;
+ string caracteristicas = 52;
+ string imagen_url = 53;
+ string unidad_inventario = 54;
+ double factor_inventario = 55;
+ int64 padre_id = 56;
+ string document_vectors = 57;
+ double factor_coversion_unidad = 58;
+ int64 id_inventario = 59;
+ string datos_json = 60; 
+ } 
+  
+
+enum  SelectableColumnsProducto
+{
+  allColumns=0; 
+  producto_id = 1;
+  nombre = 2;
+  prod_desc = 3;
+  fecha = 4;
+  prod_nombre = 5;
+  prod_descuento_max = 6;
+  prod_gravado = 7;
+  prod_servicio = 8;
+  prod_digi_cant = 9;
+  prod_preg_unidad = 10;
+  prod_unidad_compra = 11;
+  prod_unidad_venta = 12;
+  prod_referencia = 13;
+  prod_digitar_descripcion = 14;
+  prod_codigo_barra = 15;
+  prod_existencia = 16;
+  idsubcategoria = 17;
+  prod_acepta_existencia_negativa = 18;
+  idimpuesto = 19;
+  prod_fecha_actualizacion = 20;
+  prod_porc_costo_indirecto = 21;
+  prod_ult_costo_directo = 22;
+  idtipoproducto = 23;
+  prod_itbis_incluido_precio = 24;
+  prod_margen_beneficio = 25;
+  prod_unidades_vendidas = 26;
+  prod_dia_plazo_entrega = 27;
+  idindicacion = 28;
+  familia_cod = 29;
+  prod_cod_referencia_proveedor = 30;
+  prod_nivel_reorden = 31;
+  idcategoria = 32;
+  prod_precio_venta = 33;
+  factor_conversion_venta = 34;
+  controlado = 35;
+  factor_conversion_compra = 36;
+  prod_ubicacion = 37;
+  prod_peso_neto = 38;
+  pac_desc = 39;
+  se_detalla = 40;
+  consignado = 41;
+  formula_margen = 42;
+  prod_codbarra2 = 43;
+  prod_codbarra3 = 44;
+  prod_codigo_referencia = 45;
+  suplidor = 46;
+  marca = 47;
+  idproveedor = 48;
+  margen_fijo = 49;
+  mostrar_en_gasto = 50;
+  mostrar_en_facturacion = 51;
+  caracteristicas = 52;
+  imagen_url = 53;
+  unidad_inventario = 54;
+  factor_inventario = 55;
+  padre_id = 56;
+  document_vectors = 57;
+  factor_coversion_unidad = 58;
+  id_inventario = 59;
+  datos_json = 60;}
+  

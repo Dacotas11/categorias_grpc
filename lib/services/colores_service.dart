@@ -89,7 +89,7 @@ np_colores.parent,np_colores.nombre,np_colores.path,np_colores.childrens,np_colo
     ConsultarColoresResponse response = ConsultarColoresResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Colores(), request, sqlFilter, 'nombre');
+      sqlFilter = buildFilter(Colores(), request, sqlFilter, 'id');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

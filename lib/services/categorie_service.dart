@@ -87,7 +87,7 @@ categories.parent,categories.nombre,categories.path,categories.childrens,categor
     ConsultarCategoriesResponse response = ConsultarCategoriesResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Categories(), request, sqlFilter, 'nombre');
+      sqlFilter = buildFilter(Categories(), request, sqlFilter, 'id');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

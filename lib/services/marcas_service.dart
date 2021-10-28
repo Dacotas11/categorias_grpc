@@ -89,7 +89,7 @@ np_marca.parent,np_marca.nombre,np_marca.path,np_marca.childrens,np_marca.jsonpa
     ConsultarMarcasResponse response = ConsultarMarcasResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Marcas(), request, sqlFilter, 'nombre');
+      sqlFilter = buildFilter(Marcas(), request, sqlFilter, 'id');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

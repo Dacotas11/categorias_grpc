@@ -89,7 +89,7 @@ np_patron.parent,np_patron.nombre,np_patron.path,np_patron.childrens,np_patron.j
     ConsultarPatronesResponse response = ConsultarPatronesResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Patrones(), request, sqlFilter, 'nombre');
+      sqlFilter = buildFilter(Patrones(), request, sqlFilter, 'id');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

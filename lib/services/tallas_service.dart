@@ -87,7 +87,7 @@ np_talla.parent,np_talla.nombre,np_talla.path,np_talla.childrens,np_talla.jsonpa
     ConsultarTallasResponse response = ConsultarTallasResponse.create();
     try {
       String sqlFilter = '';
-      sqlFilter = buildFilter(Tallas(), request, sqlFilter, 'nombre');
+      sqlFilter = buildFilter(Tallas(), request, sqlFilter, 'id');
 
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';

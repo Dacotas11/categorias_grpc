@@ -22,6 +22,7 @@ import 'package:categorias_grpc/services/colores_service.dart';
 import 'package:categorias_grpc/services/generos_service.dart';
 import 'package:categorias_grpc/services/marcas_service.dart';
 import 'package:categorias_grpc/services/patrones_service.dart';
+import 'package:categorias_grpc/services/producto_service.dart';
 import 'package:categorias_grpc/services/tallas_service.dart';
 
 /// Dart implementation of the gRPC helloworld.Greeter server.
@@ -51,7 +52,8 @@ abstract class BitsServer {
       GenerosSrv(),
       MarcasSrv(),
       PatronesSrv(),
-      TallasSrv()
+      TallasSrv(),
+      ProductoSrv()
     ],
     <Interceptor>[],
   );

@@ -33,9 +33,9 @@ abstract class Config {
         'JWT_AUTH_SECRET': '',
         'DB_PORT': '5432',
         'DB_HOST': 'localhost',
-        'DB_USER': 'postgres',
-        'DB_PASS': '123',
-        'DB_NAME': 'base_prueba'
+        'DB_USER': 'dart',
+        'DB_PASS': 'dart',
+        'DB_NAME': 'bits_erp'
       };
       await box.put('settings', defaultValues);
     }
