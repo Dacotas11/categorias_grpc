@@ -19,10 +19,10 @@ message DeleteProductoResponse {string data= 1;bool result = 3;  repeated string
 
  message Producto 
 {
- int32 producto_id = 1;
- string nombre = 2;
+ int64 prod_cod = 1;
+ string prod_tipo_id = 2;
  string prod_desc = 3;
- google.protobuf.Timestamp fecha = 4;
+ double prod_precio_compra = 4;
  string prod_nombre = 5;
  double prod_descuento_max = 6;
  bool prod_gravado = 7;
@@ -85,10 +85,10 @@ message DeleteProductoResponse {string data= 1;bool result = 3;  repeated string
 enum  SelectableColumnsProducto
 {
   allColumns=0; 
-  producto_id = 1;
-  nombre = 2;
+  prod_cod = 1;
+  prod_tipo_id = 2;
   prod_desc = 3;
-  fecha = 4;
+  prod_precio_compra = 4;
   prod_nombre = 5;
   prod_descuento_max = 6;
   prod_gravado = 7;

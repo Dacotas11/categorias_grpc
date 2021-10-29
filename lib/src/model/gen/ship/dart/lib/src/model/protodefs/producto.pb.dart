@@ -497,10 +497,10 @@ class DeleteProductoResponse extends $pb.GeneratedMessage {
 
 class Producto extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Producto', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'productoId', $pb.PbFieldType.O3)
-    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'nombre')
+    ..aInt64(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodCod')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodTipoId')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodDesc')
-    ..aOM<$16.Timestamp>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'fecha', subBuilder: $16.Timestamp.create)
+    ..a<$core.double>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodPrecioCompra', $pb.PbFieldType.OD)
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodNombre')
     ..a<$core.double>(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodDescuentoMax', $pb.PbFieldType.OD)
     ..aOB(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodGravado')
@@ -562,10 +562,10 @@ class Producto extends $pb.GeneratedMessage {
 
   Producto._() : super();
   factory Producto({
-    $core.int? productoId,
-    $core.String? nombre,
+    $fixnum.Int64? prodCod,
+    $core.String? prodTipoId,
     $core.String? prodDesc,
-    $16.Timestamp? fecha,
+    $core.double? prodPrecioCompra,
     $core.String? prodNombre,
     $core.double? prodDescuentoMax,
     $core.bool? prodGravado,
@@ -624,17 +624,17 @@ class Producto extends $pb.GeneratedMessage {
     $core.String? datosJson,
   }) {
     final _result = create();
-    if (productoId != null) {
-      _result.productoId = productoId;
+    if (prodCod != null) {
+      _result.prodCod = prodCod;
     }
-    if (nombre != null) {
-      _result.nombre = nombre;
+    if (prodTipoId != null) {
+      _result.prodTipoId = prodTipoId;
     }
     if (prodDesc != null) {
       _result.prodDesc = prodDesc;
     }
-    if (fecha != null) {
-      _result.fecha = fecha;
+    if (prodPrecioCompra != null) {
+      _result.prodPrecioCompra = prodPrecioCompra;
     }
     if (prodNombre != null) {
       _result.prodNombre = prodNombre;
@@ -828,22 +828,22 @@ class Producto extends $pb.GeneratedMessage {
   static Producto? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get productoId => $_getIZ(0);
+  $fixnum.Int64 get prodCod => $_getI64(0);
   @$pb.TagNumber(1)
-  set productoId($core.int v) { $_setSignedInt32(0, v); }
+  set prodCod($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
-  $core.bool hasProductoId() => $_has(0);
+  $core.bool hasProdCod() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProductoId() => clearField(1);
+  void clearProdCod() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.String get nombre => $_getSZ(1);
+  $core.String get prodTipoId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set nombre($core.String v) { $_setString(1, v); }
+  set prodTipoId($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
-  $core.bool hasNombre() => $_has(1);
+  $core.bool hasProdTipoId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNombre() => clearField(2);
+  void clearProdTipoId() => clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get prodDesc => $_getSZ(2);
@@ -855,15 +855,13 @@ class Producto extends $pb.GeneratedMessage {
   void clearProdDesc() => clearField(3);
 
   @$pb.TagNumber(4)
-  $16.Timestamp get fecha => $_getN(3);
+  $core.double get prodPrecioCompra => $_getN(3);
   @$pb.TagNumber(4)
-  set fecha($16.Timestamp v) { setField(4, v); }
+  set prodPrecioCompra($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(4)
-  $core.bool hasFecha() => $_has(3);
+  $core.bool hasProdPrecioCompra() => $_has(3);
   @$pb.TagNumber(4)
-  void clearFecha() => clearField(4);
-  @$pb.TagNumber(4)
-  $16.Timestamp ensureFecha() => $_ensure(3);
+  void clearProdPrecioCompra() => clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get prodNombre => $_getSZ(4);

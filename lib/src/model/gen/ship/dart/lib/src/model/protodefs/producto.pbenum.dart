@@ -11,10 +11,10 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 class SelectableColumnsProducto extends $pb.ProtobufEnum {
   static const SelectableColumnsProducto allColumns = SelectableColumnsProducto._(0, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'allColumns');
-  static const SelectableColumnsProducto producto_id = SelectableColumnsProducto._(1, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'producto_id');
-  static const SelectableColumnsProducto nombre = SelectableColumnsProducto._(2, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'nombre');
+  static const SelectableColumnsProducto prod_cod = SelectableColumnsProducto._(1, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_cod');
+  static const SelectableColumnsProducto prod_tipo_id = SelectableColumnsProducto._(2, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_tipo_id');
   static const SelectableColumnsProducto prod_desc = SelectableColumnsProducto._(3, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_desc');
-  static const SelectableColumnsProducto fecha = SelectableColumnsProducto._(4, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'fecha');
+  static const SelectableColumnsProducto prod_precio_compra = SelectableColumnsProducto._(4, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_precio_compra');
   static const SelectableColumnsProducto prod_nombre = SelectableColumnsProducto._(5, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_nombre');
   static const SelectableColumnsProducto prod_descuento_max = SelectableColumnsProducto._(6, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_descuento_max');
   static const SelectableColumnsProducto prod_gravado = SelectableColumnsProducto._(7, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'prod_gravado');
@@ -74,10 +74,10 @@ class SelectableColumnsProducto extends $pb.ProtobufEnum {
 
   static const $core.List<SelectableColumnsProducto> values = <SelectableColumnsProducto> [
     allColumns,
-    producto_id,
-    nombre,
+    prod_cod,
+    prod_tipo_id,
     prod_desc,
-    fecha,
+    prod_precio_compra,
     prod_nombre,
     prod_descuento_max,
     prod_gravado,
