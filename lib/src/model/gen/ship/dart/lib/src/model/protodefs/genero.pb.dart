@@ -1,33 +1,34 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/generos.proto
+//  source: lib/src/model/protodefs/genero.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
+import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shared.pb.dart' as $12;
+import 'shared.pb.dart' as $17;
 
-export 'generos.pbenum.dart';
+export 'genero.pbenum.dart';
 
-class AddUpdateGenerosRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateGenerosRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
-    ..aOM<Generos>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Generos.create)
-    ..aOM<Generos>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Generos.create)
-    ..aOM<$12.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $12.UserDataDetail.create)
-    ..aOM<$12.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $12.DeletedInfo.create)
+class AddUpdateGeneroRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateGeneroRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
+    ..aOM<Genero>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Genero.create)
+    ..aOM<Genero>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Genero.create)
+    ..aOM<$17.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $17.UserDataDetail.create)
+    ..aOM<$17.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $17.DeletedInfo.create)
     ..hasRequiredFields = false
   ;
 
-  AddUpdateGenerosRequest._() : super();
-  factory AddUpdateGenerosRequest({
-    Generos? data,
-    Generos? origndata,
-    $12.UserDataDetail? userdata,
-    $12.DeletedInfo? deletedinfo,
+  AddUpdateGeneroRequest._() : super();
+  factory AddUpdateGeneroRequest({
+    Genero? data,
+    Genero? origndata,
+    $17.UserDataDetail? userdata,
+    $17.DeletedInfo? deletedinfo,
   }) {
     final _result = create();
     if (data != null) {
@@ -44,86 +45,86 @@ class AddUpdateGenerosRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateGenerosRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateGenerosRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdateGeneroRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdateGeneroRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateGenerosRequest clone() => AddUpdateGenerosRequest()..mergeFromMessage(this);
+  AddUpdateGeneroRequest clone() => AddUpdateGeneroRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateGenerosRequest copyWith(void Function(AddUpdateGenerosRequest) updates) => super.copyWith((message) => updates(message as AddUpdateGenerosRequest)) as AddUpdateGenerosRequest; // ignore: deprecated_member_use
+  AddUpdateGeneroRequest copyWith(void Function(AddUpdateGeneroRequest) updates) => super.copyWith((message) => updates(message as AddUpdateGeneroRequest)) as AddUpdateGeneroRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateGenerosRequest create() => AddUpdateGenerosRequest._();
-  AddUpdateGenerosRequest createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateGenerosRequest> createRepeated() => $pb.PbList<AddUpdateGenerosRequest>();
+  static AddUpdateGeneroRequest create() => AddUpdateGeneroRequest._();
+  AddUpdateGeneroRequest createEmptyInstance() => create();
+  static $pb.PbList<AddUpdateGeneroRequest> createRepeated() => $pb.PbList<AddUpdateGeneroRequest>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateGenerosRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateGenerosRequest>(create);
-  static AddUpdateGenerosRequest? _defaultInstance;
+  static AddUpdateGeneroRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateGeneroRequest>(create);
+  static AddUpdateGeneroRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Generos get data => $_getN(0);
+  Genero get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Generos v) { setField(1, v); }
+  set data(Genero v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Generos ensureData() => $_ensure(0);
+  Genero ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  Generos get origndata => $_getN(1);
+  Genero get origndata => $_getN(1);
   @$pb.TagNumber(2)
-  set origndata(Generos v) { setField(2, v); }
+  set origndata(Genero v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOrigndata() => $_has(1);
   @$pb.TagNumber(2)
   void clearOrigndata() => clearField(2);
   @$pb.TagNumber(2)
-  Generos ensureOrigndata() => $_ensure(1);
+  Genero ensureOrigndata() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $12.UserDataDetail get userdata => $_getN(2);
+  $17.UserDataDetail get userdata => $_getN(2);
   @$pb.TagNumber(3)
-  set userdata($12.UserDataDetail v) { setField(3, v); }
+  set userdata($17.UserDataDetail v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserdata() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserdata() => clearField(3);
   @$pb.TagNumber(3)
-  $12.UserDataDetail ensureUserdata() => $_ensure(2);
+  $17.UserDataDetail ensureUserdata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $12.DeletedInfo get deletedinfo => $_getN(3);
+  $17.DeletedInfo get deletedinfo => $_getN(3);
   @$pb.TagNumber(4)
-  set deletedinfo($12.DeletedInfo v) { setField(4, v); }
+  set deletedinfo($17.DeletedInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeletedinfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeletedinfo() => clearField(4);
   @$pb.TagNumber(4)
-  $12.DeletedInfo ensureDeletedinfo() => $_ensure(3);
+  $17.DeletedInfo ensureDeletedinfo() => $_ensure(3);
 }
 
-class AddUpdateGenerosResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateGenerosResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
-    ..aOM<Generos>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Generos.create)
-    ..aOM<$12.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $12.DeletedInfoResponse.create)
+class AddUpdateGeneroResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateGeneroResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
+    ..aOM<Genero>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Genero.create)
+    ..aOM<$17.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $17.DeletedInfoResponse.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorcode')
     ..hasRequiredFields = false
   ;
 
-  AddUpdateGenerosResponse._() : super();
-  factory AddUpdateGenerosResponse({
-    Generos? data,
-    $12.DeletedInfoResponse? deleteInfoResponse,
+  AddUpdateGeneroResponse._() : super();
+  factory AddUpdateGeneroResponse({
+    Genero? data,
+    $17.DeletedInfoResponse? deleteInfoResponse,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
     $core.String? errorcode,
@@ -146,48 +147,48 @@ class AddUpdateGenerosResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateGenerosResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateGenerosResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdateGeneroResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdateGeneroResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateGenerosResponse clone() => AddUpdateGenerosResponse()..mergeFromMessage(this);
+  AddUpdateGeneroResponse clone() => AddUpdateGeneroResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateGenerosResponse copyWith(void Function(AddUpdateGenerosResponse) updates) => super.copyWith((message) => updates(message as AddUpdateGenerosResponse)) as AddUpdateGenerosResponse; // ignore: deprecated_member_use
+  AddUpdateGeneroResponse copyWith(void Function(AddUpdateGeneroResponse) updates) => super.copyWith((message) => updates(message as AddUpdateGeneroResponse)) as AddUpdateGeneroResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateGenerosResponse create() => AddUpdateGenerosResponse._();
-  AddUpdateGenerosResponse createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateGenerosResponse> createRepeated() => $pb.PbList<AddUpdateGenerosResponse>();
+  static AddUpdateGeneroResponse create() => AddUpdateGeneroResponse._();
+  AddUpdateGeneroResponse createEmptyInstance() => create();
+  static $pb.PbList<AddUpdateGeneroResponse> createRepeated() => $pb.PbList<AddUpdateGeneroResponse>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateGenerosResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateGenerosResponse>(create);
-  static AddUpdateGenerosResponse? _defaultInstance;
+  static AddUpdateGeneroResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateGeneroResponse>(create);
+  static AddUpdateGeneroResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Generos get data => $_getN(0);
+  Genero get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Generos v) { setField(1, v); }
+  set data(Genero v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Generos ensureData() => $_ensure(0);
+  Genero ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $12.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
+  $17.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
   @$pb.TagNumber(2)
-  set deleteInfoResponse($12.DeletedInfoResponse v) { setField(2, v); }
+  set deleteInfoResponse($17.DeletedInfoResponse v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeleteInfoResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeleteInfoResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $12.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
+  $17.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.bool get result => $_getBF(2);
@@ -211,14 +212,14 @@ class AddUpdateGenerosResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class ConsultarGenerosRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarGenerosRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
+class ConsultarGeneroRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarGeneroRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'queryStr', protoName: 'queryStr')
     ..hasRequiredFields = false
   ;
 
-  ConsultarGenerosRequest._() : super();
-  factory ConsultarGenerosRequest({
+  ConsultarGeneroRequest._() : super();
+  factory ConsultarGeneroRequest({
     $core.String? queryStr,
   }) {
     final _result = create();
@@ -227,26 +228,26 @@ class ConsultarGenerosRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarGenerosRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarGenerosRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarGeneroRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarGeneroRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarGenerosRequest clone() => ConsultarGenerosRequest()..mergeFromMessage(this);
+  ConsultarGeneroRequest clone() => ConsultarGeneroRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarGenerosRequest copyWith(void Function(ConsultarGenerosRequest) updates) => super.copyWith((message) => updates(message as ConsultarGenerosRequest)) as ConsultarGenerosRequest; // ignore: deprecated_member_use
+  ConsultarGeneroRequest copyWith(void Function(ConsultarGeneroRequest) updates) => super.copyWith((message) => updates(message as ConsultarGeneroRequest)) as ConsultarGeneroRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarGenerosRequest create() => ConsultarGenerosRequest._();
-  ConsultarGenerosRequest createEmptyInstance() => create();
-  static $pb.PbList<ConsultarGenerosRequest> createRepeated() => $pb.PbList<ConsultarGenerosRequest>();
+  static ConsultarGeneroRequest create() => ConsultarGeneroRequest._();
+  ConsultarGeneroRequest createEmptyInstance() => create();
+  static $pb.PbList<ConsultarGeneroRequest> createRepeated() => $pb.PbList<ConsultarGeneroRequest>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarGenerosRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarGenerosRequest>(create);
-  static ConsultarGenerosRequest? _defaultInstance;
+  static ConsultarGeneroRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarGeneroRequest>(create);
+  static ConsultarGeneroRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get queryStr => $_getSZ(0);
@@ -258,9 +259,9 @@ class ConsultarGenerosRequest extends $pb.GeneratedMessage {
   void clearQueryStr() => clearField(1);
 }
 
-class ConsultarGenerosResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarGenerosResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
-    ..pc<Generos>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Generos.create)
+class ConsultarGeneroResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarGeneroResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
+    ..pc<Genero>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Genero.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'totalRowsCount', $pb.PbFieldType.O3, protoName: 'totalRowsCount')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -269,9 +270,9 @@ class ConsultarGenerosResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  ConsultarGenerosResponse._() : super();
-  factory ConsultarGenerosResponse({
-    $core.Iterable<Generos>? data,
+  ConsultarGeneroResponse._() : super();
+  factory ConsultarGeneroResponse({
+    $core.Iterable<Genero>? data,
     $core.int? totalRowsCount,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -299,29 +300,29 @@ class ConsultarGenerosResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarGenerosResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarGenerosResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarGeneroResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarGeneroResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarGenerosResponse clone() => ConsultarGenerosResponse()..mergeFromMessage(this);
+  ConsultarGeneroResponse clone() => ConsultarGeneroResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarGenerosResponse copyWith(void Function(ConsultarGenerosResponse) updates) => super.copyWith((message) => updates(message as ConsultarGenerosResponse)) as ConsultarGenerosResponse; // ignore: deprecated_member_use
+  ConsultarGeneroResponse copyWith(void Function(ConsultarGeneroResponse) updates) => super.copyWith((message) => updates(message as ConsultarGeneroResponse)) as ConsultarGeneroResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarGenerosResponse create() => ConsultarGenerosResponse._();
-  ConsultarGenerosResponse createEmptyInstance() => create();
-  static $pb.PbList<ConsultarGenerosResponse> createRepeated() => $pb.PbList<ConsultarGenerosResponse>();
+  static ConsultarGeneroResponse create() => ConsultarGeneroResponse._();
+  ConsultarGeneroResponse createEmptyInstance() => create();
+  static $pb.PbList<ConsultarGeneroResponse> createRepeated() => $pb.PbList<ConsultarGeneroResponse>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarGenerosResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarGenerosResponse>(create);
-  static ConsultarGenerosResponse? _defaultInstance;
+  static ConsultarGeneroResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarGeneroResponse>(create);
+  static ConsultarGeneroResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<Generos> get data => $_getList(0);
+  $core.List<Genero> get data => $_getList(0);
 
   @$pb.TagNumber(2)
   $core.int get totalRowsCount => $_getIZ(1);
@@ -363,14 +364,14 @@ class ConsultarGenerosResponse extends $pb.GeneratedMessage {
   void clearLastKey() => clearField(6);
 }
 
-class DeleteGenerosRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteGenerosRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
+class DeleteGeneroRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteGeneroRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
-  DeleteGenerosRequest._() : super();
-  factory DeleteGenerosRequest({
+  DeleteGeneroRequest._() : super();
+  factory DeleteGeneroRequest({
     $core.String? id,
   }) {
     final _result = create();
@@ -379,26 +380,26 @@ class DeleteGenerosRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteGenerosRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteGenerosRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteGeneroRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeleteGeneroRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteGenerosRequest clone() => DeleteGenerosRequest()..mergeFromMessage(this);
+  DeleteGeneroRequest clone() => DeleteGeneroRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteGenerosRequest copyWith(void Function(DeleteGenerosRequest) updates) => super.copyWith((message) => updates(message as DeleteGenerosRequest)) as DeleteGenerosRequest; // ignore: deprecated_member_use
+  DeleteGeneroRequest copyWith(void Function(DeleteGeneroRequest) updates) => super.copyWith((message) => updates(message as DeleteGeneroRequest)) as DeleteGeneroRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteGenerosRequest create() => DeleteGenerosRequest._();
-  DeleteGenerosRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteGenerosRequest> createRepeated() => $pb.PbList<DeleteGenerosRequest>();
+  static DeleteGeneroRequest create() => DeleteGeneroRequest._();
+  DeleteGeneroRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteGeneroRequest> createRepeated() => $pb.PbList<DeleteGeneroRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteGenerosRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteGenerosRequest>(create);
-  static DeleteGenerosRequest? _defaultInstance;
+  static DeleteGeneroRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteGeneroRequest>(create);
+  static DeleteGeneroRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
@@ -410,8 +411,8 @@ class DeleteGenerosRequest extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 }
 
-class DeleteGenerosResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteGenerosResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
+class DeleteGeneroResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteGeneroResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -419,8 +420,8 @@ class DeleteGenerosResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  DeleteGenerosResponse._() : super();
-  factory DeleteGenerosResponse({
+  DeleteGeneroResponse._() : super();
+  factory DeleteGeneroResponse({
     $core.String? data,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -441,26 +442,26 @@ class DeleteGenerosResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteGenerosResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteGenerosResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteGeneroResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeleteGeneroResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteGenerosResponse clone() => DeleteGenerosResponse()..mergeFromMessage(this);
+  DeleteGeneroResponse clone() => DeleteGeneroResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteGenerosResponse copyWith(void Function(DeleteGenerosResponse) updates) => super.copyWith((message) => updates(message as DeleteGenerosResponse)) as DeleteGenerosResponse; // ignore: deprecated_member_use
+  DeleteGeneroResponse copyWith(void Function(DeleteGeneroResponse) updates) => super.copyWith((message) => updates(message as DeleteGeneroResponse)) as DeleteGeneroResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteGenerosResponse create() => DeleteGenerosResponse._();
-  DeleteGenerosResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteGenerosResponse> createRepeated() => $pb.PbList<DeleteGenerosResponse>();
+  static DeleteGeneroResponse create() => DeleteGeneroResponse._();
+  DeleteGeneroResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteGeneroResponse> createRepeated() => $pb.PbList<DeleteGeneroResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteGenerosResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteGenerosResponse>(create);
-  static DeleteGenerosResponse? _defaultInstance;
+  static DeleteGeneroResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteGeneroResponse>(create);
+  static DeleteGeneroResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get data => $_getSZ(0);
@@ -493,17 +494,19 @@ class DeleteGenerosResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class Generos extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Generos', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generossrv'), createEmptyInstance: create)
+class Genero extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Genero', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.generosrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'descripcion')
+    ..aInt64(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'rowid')
     ..hasRequiredFields = false
   ;
 
-  Generos._() : super();
-  factory Generos({
+  Genero._() : super();
+  factory Genero({
     $core.String? id,
     $core.String? descripcion,
+    $fixnum.Int64? rowid,
   }) {
     final _result = create();
     if (id != null) {
@@ -512,28 +515,31 @@ class Generos extends $pb.GeneratedMessage {
     if (descripcion != null) {
       _result.descripcion = descripcion;
     }
+    if (rowid != null) {
+      _result.rowid = rowid;
+    }
     return _result;
   }
-  factory Generos.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Generos.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Genero.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Genero.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  Generos clone() => Generos()..mergeFromMessage(this);
+  Genero clone() => Genero()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Generos copyWith(void Function(Generos) updates) => super.copyWith((message) => updates(message as Generos)) as Generos; // ignore: deprecated_member_use
+  Genero copyWith(void Function(Genero) updates) => super.copyWith((message) => updates(message as Genero)) as Genero; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static Generos create() => Generos._();
-  Generos createEmptyInstance() => create();
-  static $pb.PbList<Generos> createRepeated() => $pb.PbList<Generos>();
+  static Genero create() => Genero._();
+  Genero createEmptyInstance() => create();
+  static $pb.PbList<Genero> createRepeated() => $pb.PbList<Genero>();
   @$core.pragma('dart2js:noInline')
-  static Generos getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Generos>(create);
-  static Generos? _defaultInstance;
+  static Genero getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Genero>(create);
+  static Genero? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
@@ -552,5 +558,14 @@ class Generos extends $pb.GeneratedMessage {
   $core.bool hasDescripcion() => $_has(1);
   @$pb.TagNumber(2)
   void clearDescripcion() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $fixnum.Int64 get rowid => $_getI64(2);
+  @$pb.TagNumber(3)
+  set rowid($fixnum.Int64 v) { $_setInt64(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasRowid() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearRowid() => clearField(3);
 }
 

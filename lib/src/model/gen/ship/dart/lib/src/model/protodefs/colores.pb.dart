@@ -7,9 +7,10 @@
 
 import 'dart:core' as $core;
 
+import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shared.pb.dart' as $11;
+import 'shared.pb.dart' as $17;
 
 export 'colores.pbenum.dart';
 
@@ -17,8 +18,8 @@ class AddUpdateColoresRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateColoresRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.coloressrv'), createEmptyInstance: create)
     ..aOM<Colores>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Colores.create)
     ..aOM<Colores>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Colores.create)
-    ..aOM<$11.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $11.UserDataDetail.create)
-    ..aOM<$11.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $11.DeletedInfo.create)
+    ..aOM<$17.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $17.UserDataDetail.create)
+    ..aOM<$17.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $17.DeletedInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -26,8 +27,8 @@ class AddUpdateColoresRequest extends $pb.GeneratedMessage {
   factory AddUpdateColoresRequest({
     Colores? data,
     Colores? origndata,
-    $11.UserDataDetail? userdata,
-    $11.DeletedInfo? deletedinfo,
+    $17.UserDataDetail? userdata,
+    $17.DeletedInfo? deletedinfo,
   }) {
     final _result = create();
     if (data != null) {
@@ -88,32 +89,32 @@ class AddUpdateColoresRequest extends $pb.GeneratedMessage {
   Colores ensureOrigndata() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $11.UserDataDetail get userdata => $_getN(2);
+  $17.UserDataDetail get userdata => $_getN(2);
   @$pb.TagNumber(3)
-  set userdata($11.UserDataDetail v) { setField(3, v); }
+  set userdata($17.UserDataDetail v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserdata() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserdata() => clearField(3);
   @$pb.TagNumber(3)
-  $11.UserDataDetail ensureUserdata() => $_ensure(2);
+  $17.UserDataDetail ensureUserdata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $11.DeletedInfo get deletedinfo => $_getN(3);
+  $17.DeletedInfo get deletedinfo => $_getN(3);
   @$pb.TagNumber(4)
-  set deletedinfo($11.DeletedInfo v) { setField(4, v); }
+  set deletedinfo($17.DeletedInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeletedinfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeletedinfo() => clearField(4);
   @$pb.TagNumber(4)
-  $11.DeletedInfo ensureDeletedinfo() => $_ensure(3);
+  $17.DeletedInfo ensureDeletedinfo() => $_ensure(3);
 }
 
 class AddUpdateColoresResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateColoresResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.coloressrv'), createEmptyInstance: create)
     ..aOM<Colores>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Colores.create)
-    ..aOM<$11.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $11.DeletedInfoResponse.create)
+    ..aOM<$17.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $17.DeletedInfoResponse.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorcode')
@@ -123,7 +124,7 @@ class AddUpdateColoresResponse extends $pb.GeneratedMessage {
   AddUpdateColoresResponse._() : super();
   factory AddUpdateColoresResponse({
     Colores? data,
-    $11.DeletedInfoResponse? deleteInfoResponse,
+    $17.DeletedInfoResponse? deleteInfoResponse,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
     $core.String? errorcode,
@@ -179,15 +180,15 @@ class AddUpdateColoresResponse extends $pb.GeneratedMessage {
   Colores ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $11.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
+  $17.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
   @$pb.TagNumber(2)
-  set deleteInfoResponse($11.DeletedInfoResponse v) { setField(2, v); }
+  set deleteInfoResponse($17.DeletedInfoResponse v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeleteInfoResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeleteInfoResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $11.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
+  $17.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.bool get result => $_getBF(2);
@@ -498,11 +499,11 @@ class Colores extends $pb.GeneratedMessage {
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'parent')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'nombre')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'path')
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'childrens')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
-    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
-    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
-    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
+    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
+    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
+    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aInt64(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
@@ -511,11 +512,11 @@ class Colores extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? nombre,
     $core.String? path,
-    $core.String? childrens,
     $core.String? jsonpathdata,
     $core.String? padrespath,
     $core.String? title,
     $core.String? urlimage,
+    $fixnum.Int64? id,
   }) {
     final _result = create();
     if (parent != null) {
@@ -526,9 +527,6 @@ class Colores extends $pb.GeneratedMessage {
     }
     if (path != null) {
       _result.path = path;
-    }
-    if (childrens != null) {
-      _result.childrens = childrens;
     }
     if (jsonpathdata != null) {
       _result.jsonpathdata = jsonpathdata;
@@ -541,6 +539,9 @@ class Colores extends $pb.GeneratedMessage {
     }
     if (urlimage != null) {
       _result.urlimage = urlimage;
+    }
+    if (id != null) {
+      _result.id = id;
     }
     return _result;
   }
@@ -593,48 +594,48 @@ class Colores extends $pb.GeneratedMessage {
   void clearPath() => clearField(3);
 
   @$pb.TagNumber(4)
-  $core.String get childrens => $_getSZ(3);
+  $core.String get jsonpathdata => $_getSZ(3);
   @$pb.TagNumber(4)
-  set childrens($core.String v) { $_setString(3, v); }
+  set jsonpathdata($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
-  $core.bool hasChildrens() => $_has(3);
+  $core.bool hasJsonpathdata() => $_has(3);
   @$pb.TagNumber(4)
-  void clearChildrens() => clearField(4);
+  void clearJsonpathdata() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.String get jsonpathdata => $_getSZ(4);
+  $core.String get padrespath => $_getSZ(4);
   @$pb.TagNumber(5)
-  set jsonpathdata($core.String v) { $_setString(4, v); }
+  set padrespath($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
-  $core.bool hasJsonpathdata() => $_has(4);
+  $core.bool hasPadrespath() => $_has(4);
   @$pb.TagNumber(5)
-  void clearJsonpathdata() => clearField(5);
+  void clearPadrespath() => clearField(5);
 
   @$pb.TagNumber(6)
-  $core.String get padrespath => $_getSZ(5);
+  $core.String get title => $_getSZ(5);
   @$pb.TagNumber(6)
-  set padrespath($core.String v) { $_setString(5, v); }
+  set title($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
-  $core.bool hasPadrespath() => $_has(5);
+  $core.bool hasTitle() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPadrespath() => clearField(6);
+  void clearTitle() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.String get title => $_getSZ(6);
+  $core.String get urlimage => $_getSZ(6);
   @$pb.TagNumber(7)
-  set title($core.String v) { $_setString(6, v); }
+  set urlimage($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
-  $core.bool hasTitle() => $_has(6);
+  $core.bool hasUrlimage() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTitle() => clearField(7);
+  void clearUrlimage() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.String get urlimage => $_getSZ(7);
+  $fixnum.Int64 get id => $_getI64(7);
   @$pb.TagNumber(8)
-  set urlimage($core.String v) { $_setString(7, v); }
+  set id($fixnum.Int64 v) { $_setInt64(7, v); }
   @$pb.TagNumber(8)
-  $core.bool hasUrlimage() => $_has(7);
+  $core.bool hasId() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUrlimage() => clearField(8);
+  void clearId() => clearField(8);
 }
 

@@ -1,33 +1,34 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/tallas.proto
+//  source: lib/src/model/protodefs/talla.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
+import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shared.pb.dart' as $15;
+import 'shared.pb.dart' as $18;
 
-export 'tallas.pbenum.dart';
+export 'talla.pbenum.dart';
 
-class AddUpdateTallasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateTallasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
-    ..aOM<Tallas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Tallas.create)
-    ..aOM<Tallas>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Tallas.create)
-    ..aOM<$15.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $15.UserDataDetail.create)
-    ..aOM<$15.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $15.DeletedInfo.create)
+class AddUpdateTallaRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateTallaRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
+    ..aOM<Talla>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Talla.create)
+    ..aOM<Talla>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Talla.create)
+    ..aOM<$18.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $18.UserDataDetail.create)
+    ..aOM<$18.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $18.DeletedInfo.create)
     ..hasRequiredFields = false
   ;
 
-  AddUpdateTallasRequest._() : super();
-  factory AddUpdateTallasRequest({
-    Tallas? data,
-    Tallas? origndata,
-    $15.UserDataDetail? userdata,
-    $15.DeletedInfo? deletedinfo,
+  AddUpdateTallaRequest._() : super();
+  factory AddUpdateTallaRequest({
+    Talla? data,
+    Talla? origndata,
+    $18.UserDataDetail? userdata,
+    $18.DeletedInfo? deletedinfo,
   }) {
     final _result = create();
     if (data != null) {
@@ -44,86 +45,86 @@ class AddUpdateTallasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateTallasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateTallasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdateTallaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdateTallaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateTallasRequest clone() => AddUpdateTallasRequest()..mergeFromMessage(this);
+  AddUpdateTallaRequest clone() => AddUpdateTallaRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateTallasRequest copyWith(void Function(AddUpdateTallasRequest) updates) => super.copyWith((message) => updates(message as AddUpdateTallasRequest)) as AddUpdateTallasRequest; // ignore: deprecated_member_use
+  AddUpdateTallaRequest copyWith(void Function(AddUpdateTallaRequest) updates) => super.copyWith((message) => updates(message as AddUpdateTallaRequest)) as AddUpdateTallaRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateTallasRequest create() => AddUpdateTallasRequest._();
-  AddUpdateTallasRequest createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateTallasRequest> createRepeated() => $pb.PbList<AddUpdateTallasRequest>();
+  static AddUpdateTallaRequest create() => AddUpdateTallaRequest._();
+  AddUpdateTallaRequest createEmptyInstance() => create();
+  static $pb.PbList<AddUpdateTallaRequest> createRepeated() => $pb.PbList<AddUpdateTallaRequest>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateTallasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateTallasRequest>(create);
-  static AddUpdateTallasRequest? _defaultInstance;
+  static AddUpdateTallaRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateTallaRequest>(create);
+  static AddUpdateTallaRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Tallas get data => $_getN(0);
+  Talla get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Tallas v) { setField(1, v); }
+  set data(Talla v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Tallas ensureData() => $_ensure(0);
+  Talla ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  Tallas get origndata => $_getN(1);
+  Talla get origndata => $_getN(1);
   @$pb.TagNumber(2)
-  set origndata(Tallas v) { setField(2, v); }
+  set origndata(Talla v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOrigndata() => $_has(1);
   @$pb.TagNumber(2)
   void clearOrigndata() => clearField(2);
   @$pb.TagNumber(2)
-  Tallas ensureOrigndata() => $_ensure(1);
+  Talla ensureOrigndata() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $15.UserDataDetail get userdata => $_getN(2);
+  $18.UserDataDetail get userdata => $_getN(2);
   @$pb.TagNumber(3)
-  set userdata($15.UserDataDetail v) { setField(3, v); }
+  set userdata($18.UserDataDetail v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserdata() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserdata() => clearField(3);
   @$pb.TagNumber(3)
-  $15.UserDataDetail ensureUserdata() => $_ensure(2);
+  $18.UserDataDetail ensureUserdata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $15.DeletedInfo get deletedinfo => $_getN(3);
+  $18.DeletedInfo get deletedinfo => $_getN(3);
   @$pb.TagNumber(4)
-  set deletedinfo($15.DeletedInfo v) { setField(4, v); }
+  set deletedinfo($18.DeletedInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeletedinfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeletedinfo() => clearField(4);
   @$pb.TagNumber(4)
-  $15.DeletedInfo ensureDeletedinfo() => $_ensure(3);
+  $18.DeletedInfo ensureDeletedinfo() => $_ensure(3);
 }
 
-class AddUpdateTallasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateTallasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
-    ..aOM<Tallas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Tallas.create)
-    ..aOM<$15.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $15.DeletedInfoResponse.create)
+class AddUpdateTallaResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateTallaResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
+    ..aOM<Talla>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Talla.create)
+    ..aOM<$18.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $18.DeletedInfoResponse.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorcode')
     ..hasRequiredFields = false
   ;
 
-  AddUpdateTallasResponse._() : super();
-  factory AddUpdateTallasResponse({
-    Tallas? data,
-    $15.DeletedInfoResponse? deleteInfoResponse,
+  AddUpdateTallaResponse._() : super();
+  factory AddUpdateTallaResponse({
+    Talla? data,
+    $18.DeletedInfoResponse? deleteInfoResponse,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
     $core.String? errorcode,
@@ -146,48 +147,48 @@ class AddUpdateTallasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateTallasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateTallasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdateTallaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdateTallaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateTallasResponse clone() => AddUpdateTallasResponse()..mergeFromMessage(this);
+  AddUpdateTallaResponse clone() => AddUpdateTallaResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateTallasResponse copyWith(void Function(AddUpdateTallasResponse) updates) => super.copyWith((message) => updates(message as AddUpdateTallasResponse)) as AddUpdateTallasResponse; // ignore: deprecated_member_use
+  AddUpdateTallaResponse copyWith(void Function(AddUpdateTallaResponse) updates) => super.copyWith((message) => updates(message as AddUpdateTallaResponse)) as AddUpdateTallaResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateTallasResponse create() => AddUpdateTallasResponse._();
-  AddUpdateTallasResponse createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateTallasResponse> createRepeated() => $pb.PbList<AddUpdateTallasResponse>();
+  static AddUpdateTallaResponse create() => AddUpdateTallaResponse._();
+  AddUpdateTallaResponse createEmptyInstance() => create();
+  static $pb.PbList<AddUpdateTallaResponse> createRepeated() => $pb.PbList<AddUpdateTallaResponse>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateTallasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateTallasResponse>(create);
-  static AddUpdateTallasResponse? _defaultInstance;
+  static AddUpdateTallaResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateTallaResponse>(create);
+  static AddUpdateTallaResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Tallas get data => $_getN(0);
+  Talla get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Tallas v) { setField(1, v); }
+  set data(Talla v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Tallas ensureData() => $_ensure(0);
+  Talla ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $15.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
+  $18.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
   @$pb.TagNumber(2)
-  set deleteInfoResponse($15.DeletedInfoResponse v) { setField(2, v); }
+  set deleteInfoResponse($18.DeletedInfoResponse v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeleteInfoResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeleteInfoResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $15.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
+  $18.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.bool get result => $_getBF(2);
@@ -211,14 +212,14 @@ class AddUpdateTallasResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class ConsultarTallasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarTallasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
+class ConsultarTallaRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarTallaRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'queryStr', protoName: 'queryStr')
     ..hasRequiredFields = false
   ;
 
-  ConsultarTallasRequest._() : super();
-  factory ConsultarTallasRequest({
+  ConsultarTallaRequest._() : super();
+  factory ConsultarTallaRequest({
     $core.String? queryStr,
   }) {
     final _result = create();
@@ -227,26 +228,26 @@ class ConsultarTallasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarTallasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarTallasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarTallaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarTallaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarTallasRequest clone() => ConsultarTallasRequest()..mergeFromMessage(this);
+  ConsultarTallaRequest clone() => ConsultarTallaRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarTallasRequest copyWith(void Function(ConsultarTallasRequest) updates) => super.copyWith((message) => updates(message as ConsultarTallasRequest)) as ConsultarTallasRequest; // ignore: deprecated_member_use
+  ConsultarTallaRequest copyWith(void Function(ConsultarTallaRequest) updates) => super.copyWith((message) => updates(message as ConsultarTallaRequest)) as ConsultarTallaRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarTallasRequest create() => ConsultarTallasRequest._();
-  ConsultarTallasRequest createEmptyInstance() => create();
-  static $pb.PbList<ConsultarTallasRequest> createRepeated() => $pb.PbList<ConsultarTallasRequest>();
+  static ConsultarTallaRequest create() => ConsultarTallaRequest._();
+  ConsultarTallaRequest createEmptyInstance() => create();
+  static $pb.PbList<ConsultarTallaRequest> createRepeated() => $pb.PbList<ConsultarTallaRequest>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarTallasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarTallasRequest>(create);
-  static ConsultarTallasRequest? _defaultInstance;
+  static ConsultarTallaRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarTallaRequest>(create);
+  static ConsultarTallaRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get queryStr => $_getSZ(0);
@@ -258,9 +259,9 @@ class ConsultarTallasRequest extends $pb.GeneratedMessage {
   void clearQueryStr() => clearField(1);
 }
 
-class ConsultarTallasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarTallasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
-    ..pc<Tallas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Tallas.create)
+class ConsultarTallaResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarTallaResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
+    ..pc<Talla>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Talla.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'totalRowsCount', $pb.PbFieldType.O3, protoName: 'totalRowsCount')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -269,9 +270,9 @@ class ConsultarTallasResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  ConsultarTallasResponse._() : super();
-  factory ConsultarTallasResponse({
-    $core.Iterable<Tallas>? data,
+  ConsultarTallaResponse._() : super();
+  factory ConsultarTallaResponse({
+    $core.Iterable<Talla>? data,
     $core.int? totalRowsCount,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -299,29 +300,29 @@ class ConsultarTallasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarTallasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarTallasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarTallaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarTallaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarTallasResponse clone() => ConsultarTallasResponse()..mergeFromMessage(this);
+  ConsultarTallaResponse clone() => ConsultarTallaResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarTallasResponse copyWith(void Function(ConsultarTallasResponse) updates) => super.copyWith((message) => updates(message as ConsultarTallasResponse)) as ConsultarTallasResponse; // ignore: deprecated_member_use
+  ConsultarTallaResponse copyWith(void Function(ConsultarTallaResponse) updates) => super.copyWith((message) => updates(message as ConsultarTallaResponse)) as ConsultarTallaResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarTallasResponse create() => ConsultarTallasResponse._();
-  ConsultarTallasResponse createEmptyInstance() => create();
-  static $pb.PbList<ConsultarTallasResponse> createRepeated() => $pb.PbList<ConsultarTallasResponse>();
+  static ConsultarTallaResponse create() => ConsultarTallaResponse._();
+  ConsultarTallaResponse createEmptyInstance() => create();
+  static $pb.PbList<ConsultarTallaResponse> createRepeated() => $pb.PbList<ConsultarTallaResponse>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarTallasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarTallasResponse>(create);
-  static ConsultarTallasResponse? _defaultInstance;
+  static ConsultarTallaResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarTallaResponse>(create);
+  static ConsultarTallaResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<Tallas> get data => $_getList(0);
+  $core.List<Talla> get data => $_getList(0);
 
   @$pb.TagNumber(2)
   $core.int get totalRowsCount => $_getIZ(1);
@@ -363,14 +364,14 @@ class ConsultarTallasResponse extends $pb.GeneratedMessage {
   void clearLastKey() => clearField(6);
 }
 
-class DeleteTallasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteTallasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
+class DeleteTallaRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteTallaRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
-  DeleteTallasRequest._() : super();
-  factory DeleteTallasRequest({
+  DeleteTallaRequest._() : super();
+  factory DeleteTallaRequest({
     $core.String? id,
   }) {
     final _result = create();
@@ -379,26 +380,26 @@ class DeleteTallasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteTallasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteTallasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteTallaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeleteTallaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteTallasRequest clone() => DeleteTallasRequest()..mergeFromMessage(this);
+  DeleteTallaRequest clone() => DeleteTallaRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteTallasRequest copyWith(void Function(DeleteTallasRequest) updates) => super.copyWith((message) => updates(message as DeleteTallasRequest)) as DeleteTallasRequest; // ignore: deprecated_member_use
+  DeleteTallaRequest copyWith(void Function(DeleteTallaRequest) updates) => super.copyWith((message) => updates(message as DeleteTallaRequest)) as DeleteTallaRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteTallasRequest create() => DeleteTallasRequest._();
-  DeleteTallasRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteTallasRequest> createRepeated() => $pb.PbList<DeleteTallasRequest>();
+  static DeleteTallaRequest create() => DeleteTallaRequest._();
+  DeleteTallaRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteTallaRequest> createRepeated() => $pb.PbList<DeleteTallaRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteTallasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteTallasRequest>(create);
-  static DeleteTallasRequest? _defaultInstance;
+  static DeleteTallaRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteTallaRequest>(create);
+  static DeleteTallaRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
@@ -410,8 +411,8 @@ class DeleteTallasRequest extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 }
 
-class DeleteTallasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteTallasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
+class DeleteTallaResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteTallaResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -419,8 +420,8 @@ class DeleteTallasResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  DeleteTallasResponse._() : super();
-  factory DeleteTallasResponse({
+  DeleteTallaResponse._() : super();
+  factory DeleteTallaResponse({
     $core.String? data,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -441,26 +442,26 @@ class DeleteTallasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteTallasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteTallasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeleteTallaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeleteTallaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteTallasResponse clone() => DeleteTallasResponse()..mergeFromMessage(this);
+  DeleteTallaResponse clone() => DeleteTallaResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteTallasResponse copyWith(void Function(DeleteTallasResponse) updates) => super.copyWith((message) => updates(message as DeleteTallasResponse)) as DeleteTallasResponse; // ignore: deprecated_member_use
+  DeleteTallaResponse copyWith(void Function(DeleteTallaResponse) updates) => super.copyWith((message) => updates(message as DeleteTallaResponse)) as DeleteTallaResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteTallasResponse create() => DeleteTallasResponse._();
-  DeleteTallasResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteTallasResponse> createRepeated() => $pb.PbList<DeleteTallasResponse>();
+  static DeleteTallaResponse create() => DeleteTallaResponse._();
+  DeleteTallaResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteTallaResponse> createRepeated() => $pb.PbList<DeleteTallaResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteTallasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteTallasResponse>(create);
-  static DeleteTallasResponse? _defaultInstance;
+  static DeleteTallaResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteTallaResponse>(create);
+  static DeleteTallaResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get data => $_getSZ(0);
@@ -493,29 +494,29 @@ class DeleteTallasResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class Tallas extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Tallas', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallassrv'), createEmptyInstance: create)
+class Talla extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Talla', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.tallasrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'parent')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'nombre')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'path')
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'childrens')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
-    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
-    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
-    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
+    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
+    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
+    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aInt64(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
-  Tallas._() : super();
-  factory Tallas({
+  Talla._() : super();
+  factory Talla({
     $core.String? parent,
     $core.String? nombre,
     $core.String? path,
-    $core.String? childrens,
     $core.String? jsonpathdata,
     $core.String? padrespath,
     $core.String? title,
     $core.String? urlimage,
+    $fixnum.Int64? id,
   }) {
     final _result = create();
     if (parent != null) {
@@ -526,9 +527,6 @@ class Tallas extends $pb.GeneratedMessage {
     }
     if (path != null) {
       _result.path = path;
-    }
-    if (childrens != null) {
-      _result.childrens = childrens;
     }
     if (jsonpathdata != null) {
       _result.jsonpathdata = jsonpathdata;
@@ -542,28 +540,31 @@ class Tallas extends $pb.GeneratedMessage {
     if (urlimage != null) {
       _result.urlimage = urlimage;
     }
+    if (id != null) {
+      _result.id = id;
+    }
     return _result;
   }
-  factory Tallas.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Tallas.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Talla.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Talla.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  Tallas clone() => Tallas()..mergeFromMessage(this);
+  Talla clone() => Talla()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Tallas copyWith(void Function(Tallas) updates) => super.copyWith((message) => updates(message as Tallas)) as Tallas; // ignore: deprecated_member_use
+  Talla copyWith(void Function(Talla) updates) => super.copyWith((message) => updates(message as Talla)) as Talla; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static Tallas create() => Tallas._();
-  Tallas createEmptyInstance() => create();
-  static $pb.PbList<Tallas> createRepeated() => $pb.PbList<Tallas>();
+  static Talla create() => Talla._();
+  Talla createEmptyInstance() => create();
+  static $pb.PbList<Talla> createRepeated() => $pb.PbList<Talla>();
   @$core.pragma('dart2js:noInline')
-  static Tallas getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Tallas>(create);
-  static Tallas? _defaultInstance;
+  static Talla getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Talla>(create);
+  static Talla? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
@@ -593,48 +594,48 @@ class Tallas extends $pb.GeneratedMessage {
   void clearPath() => clearField(3);
 
   @$pb.TagNumber(4)
-  $core.String get childrens => $_getSZ(3);
+  $core.String get jsonpathdata => $_getSZ(3);
   @$pb.TagNumber(4)
-  set childrens($core.String v) { $_setString(3, v); }
+  set jsonpathdata($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
-  $core.bool hasChildrens() => $_has(3);
+  $core.bool hasJsonpathdata() => $_has(3);
   @$pb.TagNumber(4)
-  void clearChildrens() => clearField(4);
+  void clearJsonpathdata() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.String get jsonpathdata => $_getSZ(4);
+  $core.String get padrespath => $_getSZ(4);
   @$pb.TagNumber(5)
-  set jsonpathdata($core.String v) { $_setString(4, v); }
+  set padrespath($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
-  $core.bool hasJsonpathdata() => $_has(4);
+  $core.bool hasPadrespath() => $_has(4);
   @$pb.TagNumber(5)
-  void clearJsonpathdata() => clearField(5);
+  void clearPadrespath() => clearField(5);
 
   @$pb.TagNumber(6)
-  $core.String get padrespath => $_getSZ(5);
+  $core.String get title => $_getSZ(5);
   @$pb.TagNumber(6)
-  set padrespath($core.String v) { $_setString(5, v); }
+  set title($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
-  $core.bool hasPadrespath() => $_has(5);
+  $core.bool hasTitle() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPadrespath() => clearField(6);
+  void clearTitle() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.String get title => $_getSZ(6);
+  $core.String get urlimage => $_getSZ(6);
   @$pb.TagNumber(7)
-  set title($core.String v) { $_setString(6, v); }
+  set urlimage($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
-  $core.bool hasTitle() => $_has(6);
+  $core.bool hasUrlimage() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTitle() => clearField(7);
+  void clearUrlimage() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.String get urlimage => $_getSZ(7);
+  $fixnum.Int64 get id => $_getI64(7);
   @$pb.TagNumber(8)
-  set urlimage($core.String v) { $_setString(7, v); }
+  set id($fixnum.Int64 v) { $_setInt64(7, v); }
   @$pb.TagNumber(8)
-  $core.bool hasUrlimage() => $_has(7);
+  $core.bool hasId() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUrlimage() => clearField(8);
+  void clearId() => clearField(8);
 }
 

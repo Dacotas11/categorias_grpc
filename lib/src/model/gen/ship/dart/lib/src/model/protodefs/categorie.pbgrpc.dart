@@ -14,27 +14,27 @@ import 'categorie.pb.dart' as $3;
 import 'filter.pb.dart' as $1;
 export 'categorie.pb.dart';
 
-class CategorieSrvClient extends $grpc.Client {
+class CategoriesSrvClient extends $grpc.Client {
   static final _$addUpdateCategories = $grpc.ClientMethod<
           $3.AddUpdateCategoriesRequest, $3.AddUpdateCategoriesResponse>(
-      '/grpc.bits.io.categoriesrv.CategorieSrv/AddUpdateCategories',
+      '/grpc.bits.io.categoriessrv.CategoriesSrv/AddUpdateCategories',
       ($3.AddUpdateCategoriesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
           $3.AddUpdateCategoriesResponse.fromBuffer(value));
   static final _$consultarCategories =
       $grpc.ClientMethod<$1.FilterRequest, $3.ConsultarCategoriesResponse>(
-          '/grpc.bits.io.categoriesrv.CategorieSrv/ConsultarCategories',
+          '/grpc.bits.io.categoriessrv.CategoriesSrv/ConsultarCategories',
           ($1.FilterRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
               $3.ConsultarCategoriesResponse.fromBuffer(value));
   static final _$deleteCategories = $grpc.ClientMethod<
           $3.DeleteCategoriesRequest, $3.DeleteCategoriesResponse>(
-      '/grpc.bits.io.categoriesrv.CategorieSrv/DeleteCategories',
+      '/grpc.bits.io.categoriessrv.CategoriesSrv/DeleteCategories',
       ($3.DeleteCategoriesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
           $3.DeleteCategoriesResponse.fromBuffer(value));
 
-  CategorieSrvClient($grpc.ClientChannel channel,
+  CategoriesSrvClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
@@ -58,10 +58,10 @@ class CategorieSrvClient extends $grpc.Client {
   }
 }
 
-abstract class CategorieSrvServiceBase extends $grpc.Service {
-  $core.String get $name => 'grpc.bits.io.categoriesrv.CategorieSrv';
+abstract class CategoriesSrvServiceBase extends $grpc.Service {
+  $core.String get $name => 'grpc.bits.io.categoriessrv.CategoriesSrv';
 
-  CategorieSrvServiceBase() {
+  CategoriesSrvServiceBase() {
     $addMethod($grpc.ServiceMethod<$3.AddUpdateCategoriesRequest,
             $3.AddUpdateCategoriesResponse>(
         'AddUpdateCategories',

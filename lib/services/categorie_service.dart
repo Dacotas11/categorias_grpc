@@ -1,22 +1,22 @@
 import 'package:categorias_grpc/auth/config.dart';
 import 'package:categorias_grpc/auth/utils.dart';
 import 'package:categorias_grpc/services/postgres_database.dart';
+import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/categorie.pbgrpc.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/filter.pb.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/shared.pb.dart';
 import 'package:categorias_grpc/top_level_providers.dart';
 import 'package:grpc/grpc.dart';
 import 'package:fixnum/fixnum.dart';
 import 'dart:developer' as developer;
-import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/categorie.pbgrpc.dart';
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/categorie.pb.dart';
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/categorie.pbgrpc.dart';
 //export 'package:bitsgrpcserversrc/model/gen/ship/dart/categorie.pbenum.dart';
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/categorie.pbjson.dart';
 
-class CategorieSrv extends CategorieSrvServiceBase {
+class CategoriesSrv extends CategoriesSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-categories.parent,categories.nombre,categories.path,categories.childrens,categories.jsonpathdata,categories.padrespath,categories.title,categories.urlimage
+categories.parent,categories.nombre,categories.path,categories.childrens,categories.jsonpathdata,categories.padrespath,categories.title,categories.urlimage,categories.id
  from dbo.categories    ''';
   @override
   Future<AddUpdateCategoriesResponse> addUpdateCategories(

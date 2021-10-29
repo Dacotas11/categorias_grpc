@@ -19,6 +19,7 @@ class SelectableColumnsColores extends $pb.ProtobufEnum {
   static const SelectableColumnsColores padrespath = SelectableColumnsColores._(6, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'padrespath');
   static const SelectableColumnsColores title = SelectableColumnsColores._(7, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'title');
   static const SelectableColumnsColores urlimage = SelectableColumnsColores._(8, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'urlimage');
+  static const SelectableColumnsColores id = SelectableColumnsColores._(9, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'id');
 
   static const $core.List<SelectableColumnsColores> values = <SelectableColumnsColores> [
     allColumns,
@@ -30,6 +31,7 @@ class SelectableColumnsColores extends $pb.ProtobufEnum {
     padrespath,
     title,
     urlimage,
+    id,
   ];
 
   static final $core.Map<$core.int, SelectableColumnsColores> _byValue = $pb.ProtobufEnum.initByValue(values);

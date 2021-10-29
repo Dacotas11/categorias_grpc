@@ -21,11 +21,11 @@ message DeleteColoresResponse {string data= 1;bool result = 3;  repeated string 
  string parent = 1;
  string nombre = 2;
  string path = 3;
- string childrens = 4;
- string jsonpathdata = 5;
- string padrespath = 6;
- string title = 7;
- string urlimage = 8; 
+ string jsonpathdata = 4;
+ string padrespath = 5;
+ string title = 6;
+ string urlimage = 7;
+ int64 id = 8; 
  } 
   
 
@@ -39,5 +39,6 @@ enum  SelectableColumnsColores
   jsonpathdata = 5;
   padrespath = 6;
   title = 7;
-  urlimage = 8;}
+  urlimage = 8;
+  id = 9;}
   

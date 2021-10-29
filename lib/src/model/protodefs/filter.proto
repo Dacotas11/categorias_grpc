@@ -1,0 +1,102 @@
+syntax = "proto3";
+// import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+package grpc.bits.io.filter;
+
+message FilterRequest {
+string query = 1;
+int32 rowsOffKeyset = 2;
+int32 rowsPerPage = 3;
+repeated WhereClause whereClause = 4;
+repeated OrderByOperator orderBy= 5;
+PaginationHandle paginationHandle= 6;
+
+}
+message FieldFilter {
+    int32 fieldId= 1;
+    string operator=2;
+    google.protobuf.Value value1= 3;
+    google.protobuf.Value value2= 4;
+    string columnName = 5;
+}
+enum OrderType {
+    asc = 0;
+    desc = 1;
+}
+
+message OrderByOperator{
+    string columnName = 1;
+    grpc.bits.io.filter.OrderType orderType = 2; 
+}
+enum WhereConector {
+    none=0;
+    and = 1;
+    or = 2;
+    not= 3;
+}
+message WhereClause {
+    int32 fieldId= 1;
+    WhereOperator operator=2;
+    google.protobuf.Value value1= 3;
+    google.protobuf.Value value2= 4;
+    string columnName = 5;
+    WhereConector conector= 6;
+    string label= 7;
+    string tooltip= 8;
+    string jsonpath= 9;
+    WhereOptionView viewOption= 10;
+    map<string,google.protobuf.Value> meta= 11;
+    string selectedValue= 12;
+    string jsonFieldKey= 13;
+    int32 filterIndex= 14;
+}
+enum WhereOptionView {
+    nodefined=0;
+    tooltip= 1;
+    bool= 2;
+    numberRange= 3;
+    dateRange= 4;
+    optionSelectText= 5;
+}
+enum WhereOperator {
+    equals= 0;
+    greater_than= 1;
+    less_than= 2;
+    greater_than_or_equal= 3;
+    less_than_or_equal= 4;
+    not_equal= 5;
+    in= 6;
+    between= 7;
+    like= 8;
+    is_null= 9;
+    starts_with= 10;
+    end_with= 11;
+    contains= 12;
+
+}
+enum PaginationHandle {
+    firstime=0;
+    next= 1;
+    previous= 2;
+}
+enum ClientFilterType {
+    string= 0;
+    date= 1;
+    range= 2;
+    TYPE_MESSAGE= 3;
+}
+message  ClientFilterData
+{
+int64 fielId= 1;
+ClientFilterType type= 2;
+repeated HazMap data= 3;
+string entityName= 4;
+string columnKey= 5;
+string columnDisplayName= 6;
+map<string,google.protobuf.Value> mappedData= 7;
+string filterDisPlayName= 8;
+}
+
+message HazMap {
+    map<string,string> data= 3;
+}

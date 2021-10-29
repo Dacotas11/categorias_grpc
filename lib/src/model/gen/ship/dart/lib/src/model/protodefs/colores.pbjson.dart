@@ -21,11 +21,12 @@ const SelectableColumnsColores$json = const {
     const {'1': 'padrespath', '2': 6},
     const {'1': 'title', '2': 7},
     const {'1': 'urlimage', '2': 8},
+    const {'1': 'id', '2': 9},
   ],
 };
 
 /// Descriptor for `SelectableColumnsColores`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List selectableColumnsColoresDescriptor = $convert.base64Decode('ChhTZWxlY3RhYmxlQ29sdW1uc0NvbG9yZXMSDgoKYWxsQ29sdW1ucxAAEgoKBnBhcmVudBABEgoKBm5vbWJyZRACEggKBHBhdGgQAxINCgljaGlsZHJlbnMQBBIQCgxqc29ucGF0aGRhdGEQBRIOCgpwYWRyZXNwYXRoEAYSCQoFdGl0bGUQBxIMCgh1cmxpbWFnZRAI');
+final $typed_data.Uint8List selectableColumnsColoresDescriptor = $convert.base64Decode('ChhTZWxlY3RhYmxlQ29sdW1uc0NvbG9yZXMSDgoKYWxsQ29sdW1ucxAAEgoKBnBhcmVudBABEgoKBm5vbWJyZRACEggKBHBhdGgQAxINCgljaGlsZHJlbnMQBBIQCgxqc29ucGF0aGRhdGEQBRIOCgpwYWRyZXNwYXRoEAYSCQoFdGl0bGUQBxIMCgh1cmxpbWFnZRAIEgYKAmlkEAk=');
 @$core.Deprecated('Use addUpdateColoresRequestDescriptor instead')
 const AddUpdateColoresRequest$json = const {
   '1': 'AddUpdateColoresRequest',
@@ -108,13 +109,13 @@ const Colores$json = const {
     const {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
     const {'1': 'nombre', '3': 2, '4': 1, '5': 9, '10': 'nombre'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
-    const {'1': 'childrens', '3': 4, '4': 1, '5': 9, '10': 'childrens'},
-    const {'1': 'jsonpathdata', '3': 5, '4': 1, '5': 9, '10': 'jsonpathdata'},
-    const {'1': 'padrespath', '3': 6, '4': 1, '5': 9, '10': 'padrespath'},
-    const {'1': 'title', '3': 7, '4': 1, '5': 9, '10': 'title'},
-    const {'1': 'urlimage', '3': 8, '4': 1, '5': 9, '10': 'urlimage'},
+    const {'1': 'jsonpathdata', '3': 4, '4': 1, '5': 9, '10': 'jsonpathdata'},
+    const {'1': 'padrespath', '3': 5, '4': 1, '5': 9, '10': 'padrespath'},
+    const {'1': 'title', '3': 6, '4': 1, '5': 9, '10': 'title'},
+    const {'1': 'urlimage', '3': 7, '4': 1, '5': 9, '10': 'urlimage'},
+    const {'1': 'id', '3': 8, '4': 1, '5': 3, '10': 'id'},
   ],
 };
 
 /// Descriptor for `Colores`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List coloresDescriptor = $convert.base64Decode('CgdDb2xvcmVzEhYKBnBhcmVudBgBIAEoCVIGcGFyZW50EhYKBm5vbWJyZRgCIAEoCVIGbm9tYnJlEhIKBHBhdGgYAyABKAlSBHBhdGgSHAoJY2hpbGRyZW5zGAQgASgJUgljaGlsZHJlbnMSIgoManNvbnBhdGhkYXRhGAUgASgJUgxqc29ucGF0aGRhdGESHgoKcGFkcmVzcGF0aBgGIAEoCVIKcGFkcmVzcGF0aBIUCgV0aXRsZRgHIAEoCVIFdGl0bGUSGgoIdXJsaW1hZ2UYCCABKAlSCHVybGltYWdl');
+final $typed_data.Uint8List coloresDescriptor = $convert.base64Decode('CgdDb2xvcmVzEhYKBnBhcmVudBgBIAEoCVIGcGFyZW50EhYKBm5vbWJyZRgCIAEoCVIGbm9tYnJlEhIKBHBhdGgYAyABKAlSBHBhdGgSIgoManNvbnBhdGhkYXRhGAQgASgJUgxqc29ucGF0aGRhdGESHgoKcGFkcmVzcGF0aBgFIAEoCVIKcGFkcmVzcGF0aBIUCgV0aXRsZRgGIAEoCVIFdGl0bGUSGgoIdXJsaW1hZ2UYByABKAlSCHVybGltYWdlEg4KAmlkGAggASgDUgJpZA==');

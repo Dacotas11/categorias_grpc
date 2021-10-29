@@ -1,33 +1,34 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/marcas.proto
+//  source: lib/src/model/protodefs/patron.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
+import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shared.pb.dart' as $13;
+import 'shared.pb.dart' as $18;
 
-export 'marcas.pbenum.dart';
+export 'patron.pbenum.dart';
 
-class AddUpdateMarcasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateMarcasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
-    ..aOM<Marcas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Marcas.create)
-    ..aOM<Marcas>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Marcas.create)
-    ..aOM<$13.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $13.UserDataDetail.create)
-    ..aOM<$13.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $13.DeletedInfo.create)
+class AddUpdatePatronRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdatePatronRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
+    ..aOM<Patron>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Patron.create)
+    ..aOM<Patron>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Patron.create)
+    ..aOM<$18.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $18.UserDataDetail.create)
+    ..aOM<$18.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $18.DeletedInfo.create)
     ..hasRequiredFields = false
   ;
 
-  AddUpdateMarcasRequest._() : super();
-  factory AddUpdateMarcasRequest({
-    Marcas? data,
-    Marcas? origndata,
-    $13.UserDataDetail? userdata,
-    $13.DeletedInfo? deletedinfo,
+  AddUpdatePatronRequest._() : super();
+  factory AddUpdatePatronRequest({
+    Patron? data,
+    Patron? origndata,
+    $18.UserDataDetail? userdata,
+    $18.DeletedInfo? deletedinfo,
   }) {
     final _result = create();
     if (data != null) {
@@ -44,86 +45,86 @@ class AddUpdateMarcasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateMarcasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateMarcasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdatePatronRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdatePatronRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateMarcasRequest clone() => AddUpdateMarcasRequest()..mergeFromMessage(this);
+  AddUpdatePatronRequest clone() => AddUpdatePatronRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateMarcasRequest copyWith(void Function(AddUpdateMarcasRequest) updates) => super.copyWith((message) => updates(message as AddUpdateMarcasRequest)) as AddUpdateMarcasRequest; // ignore: deprecated_member_use
+  AddUpdatePatronRequest copyWith(void Function(AddUpdatePatronRequest) updates) => super.copyWith((message) => updates(message as AddUpdatePatronRequest)) as AddUpdatePatronRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateMarcasRequest create() => AddUpdateMarcasRequest._();
-  AddUpdateMarcasRequest createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateMarcasRequest> createRepeated() => $pb.PbList<AddUpdateMarcasRequest>();
+  static AddUpdatePatronRequest create() => AddUpdatePatronRequest._();
+  AddUpdatePatronRequest createEmptyInstance() => create();
+  static $pb.PbList<AddUpdatePatronRequest> createRepeated() => $pb.PbList<AddUpdatePatronRequest>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateMarcasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateMarcasRequest>(create);
-  static AddUpdateMarcasRequest? _defaultInstance;
+  static AddUpdatePatronRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdatePatronRequest>(create);
+  static AddUpdatePatronRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Marcas get data => $_getN(0);
+  Patron get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Marcas v) { setField(1, v); }
+  set data(Patron v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Marcas ensureData() => $_ensure(0);
+  Patron ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  Marcas get origndata => $_getN(1);
+  Patron get origndata => $_getN(1);
   @$pb.TagNumber(2)
-  set origndata(Marcas v) { setField(2, v); }
+  set origndata(Patron v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOrigndata() => $_has(1);
   @$pb.TagNumber(2)
   void clearOrigndata() => clearField(2);
   @$pb.TagNumber(2)
-  Marcas ensureOrigndata() => $_ensure(1);
+  Patron ensureOrigndata() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $13.UserDataDetail get userdata => $_getN(2);
+  $18.UserDataDetail get userdata => $_getN(2);
   @$pb.TagNumber(3)
-  set userdata($13.UserDataDetail v) { setField(3, v); }
+  set userdata($18.UserDataDetail v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserdata() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserdata() => clearField(3);
   @$pb.TagNumber(3)
-  $13.UserDataDetail ensureUserdata() => $_ensure(2);
+  $18.UserDataDetail ensureUserdata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $13.DeletedInfo get deletedinfo => $_getN(3);
+  $18.DeletedInfo get deletedinfo => $_getN(3);
   @$pb.TagNumber(4)
-  set deletedinfo($13.DeletedInfo v) { setField(4, v); }
+  set deletedinfo($18.DeletedInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeletedinfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeletedinfo() => clearField(4);
   @$pb.TagNumber(4)
-  $13.DeletedInfo ensureDeletedinfo() => $_ensure(3);
+  $18.DeletedInfo ensureDeletedinfo() => $_ensure(3);
 }
 
-class AddUpdateMarcasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateMarcasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
-    ..aOM<Marcas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Marcas.create)
-    ..aOM<$13.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $13.DeletedInfoResponse.create)
+class AddUpdatePatronResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdatePatronResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
+    ..aOM<Patron>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Patron.create)
+    ..aOM<$18.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $18.DeletedInfoResponse.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorcode')
     ..hasRequiredFields = false
   ;
 
-  AddUpdateMarcasResponse._() : super();
-  factory AddUpdateMarcasResponse({
-    Marcas? data,
-    $13.DeletedInfoResponse? deleteInfoResponse,
+  AddUpdatePatronResponse._() : super();
+  factory AddUpdatePatronResponse({
+    Patron? data,
+    $18.DeletedInfoResponse? deleteInfoResponse,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
     $core.String? errorcode,
@@ -146,48 +147,48 @@ class AddUpdateMarcasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory AddUpdateMarcasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AddUpdateMarcasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AddUpdatePatronResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AddUpdatePatronResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  AddUpdateMarcasResponse clone() => AddUpdateMarcasResponse()..mergeFromMessage(this);
+  AddUpdatePatronResponse clone() => AddUpdatePatronResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  AddUpdateMarcasResponse copyWith(void Function(AddUpdateMarcasResponse) updates) => super.copyWith((message) => updates(message as AddUpdateMarcasResponse)) as AddUpdateMarcasResponse; // ignore: deprecated_member_use
+  AddUpdatePatronResponse copyWith(void Function(AddUpdatePatronResponse) updates) => super.copyWith((message) => updates(message as AddUpdatePatronResponse)) as AddUpdatePatronResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static AddUpdateMarcasResponse create() => AddUpdateMarcasResponse._();
-  AddUpdateMarcasResponse createEmptyInstance() => create();
-  static $pb.PbList<AddUpdateMarcasResponse> createRepeated() => $pb.PbList<AddUpdateMarcasResponse>();
+  static AddUpdatePatronResponse create() => AddUpdatePatronResponse._();
+  AddUpdatePatronResponse createEmptyInstance() => create();
+  static $pb.PbList<AddUpdatePatronResponse> createRepeated() => $pb.PbList<AddUpdatePatronResponse>();
   @$core.pragma('dart2js:noInline')
-  static AddUpdateMarcasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdateMarcasResponse>(create);
-  static AddUpdateMarcasResponse? _defaultInstance;
+  static AddUpdatePatronResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddUpdatePatronResponse>(create);
+  static AddUpdatePatronResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  Marcas get data => $_getN(0);
+  Patron get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data(Marcas v) { setField(1, v); }
+  set data(Patron v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
   void clearData() => clearField(1);
   @$pb.TagNumber(1)
-  Marcas ensureData() => $_ensure(0);
+  Patron ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $13.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
+  $18.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
   @$pb.TagNumber(2)
-  set deleteInfoResponse($13.DeletedInfoResponse v) { setField(2, v); }
+  set deleteInfoResponse($18.DeletedInfoResponse v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeleteInfoResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeleteInfoResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $13.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
+  $18.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.bool get result => $_getBF(2);
@@ -211,14 +212,14 @@ class AddUpdateMarcasResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class ConsultarMarcasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarMarcasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
+class ConsultarPatronRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarPatronRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'queryStr', protoName: 'queryStr')
     ..hasRequiredFields = false
   ;
 
-  ConsultarMarcasRequest._() : super();
-  factory ConsultarMarcasRequest({
+  ConsultarPatronRequest._() : super();
+  factory ConsultarPatronRequest({
     $core.String? queryStr,
   }) {
     final _result = create();
@@ -227,26 +228,26 @@ class ConsultarMarcasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarMarcasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarMarcasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarPatronRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarPatronRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarMarcasRequest clone() => ConsultarMarcasRequest()..mergeFromMessage(this);
+  ConsultarPatronRequest clone() => ConsultarPatronRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarMarcasRequest copyWith(void Function(ConsultarMarcasRequest) updates) => super.copyWith((message) => updates(message as ConsultarMarcasRequest)) as ConsultarMarcasRequest; // ignore: deprecated_member_use
+  ConsultarPatronRequest copyWith(void Function(ConsultarPatronRequest) updates) => super.copyWith((message) => updates(message as ConsultarPatronRequest)) as ConsultarPatronRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarMarcasRequest create() => ConsultarMarcasRequest._();
-  ConsultarMarcasRequest createEmptyInstance() => create();
-  static $pb.PbList<ConsultarMarcasRequest> createRepeated() => $pb.PbList<ConsultarMarcasRequest>();
+  static ConsultarPatronRequest create() => ConsultarPatronRequest._();
+  ConsultarPatronRequest createEmptyInstance() => create();
+  static $pb.PbList<ConsultarPatronRequest> createRepeated() => $pb.PbList<ConsultarPatronRequest>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarMarcasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarMarcasRequest>(create);
-  static ConsultarMarcasRequest? _defaultInstance;
+  static ConsultarPatronRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarPatronRequest>(create);
+  static ConsultarPatronRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get queryStr => $_getSZ(0);
@@ -258,9 +259,9 @@ class ConsultarMarcasRequest extends $pb.GeneratedMessage {
   void clearQueryStr() => clearField(1);
 }
 
-class ConsultarMarcasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarMarcasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
-    ..pc<Marcas>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Marcas.create)
+class ConsultarPatronResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarPatronResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
+    ..pc<Patron>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Patron.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'totalRowsCount', $pb.PbFieldType.O3, protoName: 'totalRowsCount')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -269,9 +270,9 @@ class ConsultarMarcasResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  ConsultarMarcasResponse._() : super();
-  factory ConsultarMarcasResponse({
-    $core.Iterable<Marcas>? data,
+  ConsultarPatronResponse._() : super();
+  factory ConsultarPatronResponse({
+    $core.Iterable<Patron>? data,
     $core.int? totalRowsCount,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -299,29 +300,29 @@ class ConsultarMarcasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ConsultarMarcasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConsultarMarcasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConsultarPatronResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ConsultarPatronResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  ConsultarMarcasResponse clone() => ConsultarMarcasResponse()..mergeFromMessage(this);
+  ConsultarPatronResponse clone() => ConsultarPatronResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  ConsultarMarcasResponse copyWith(void Function(ConsultarMarcasResponse) updates) => super.copyWith((message) => updates(message as ConsultarMarcasResponse)) as ConsultarMarcasResponse; // ignore: deprecated_member_use
+  ConsultarPatronResponse copyWith(void Function(ConsultarPatronResponse) updates) => super.copyWith((message) => updates(message as ConsultarPatronResponse)) as ConsultarPatronResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static ConsultarMarcasResponse create() => ConsultarMarcasResponse._();
-  ConsultarMarcasResponse createEmptyInstance() => create();
-  static $pb.PbList<ConsultarMarcasResponse> createRepeated() => $pb.PbList<ConsultarMarcasResponse>();
+  static ConsultarPatronResponse create() => ConsultarPatronResponse._();
+  ConsultarPatronResponse createEmptyInstance() => create();
+  static $pb.PbList<ConsultarPatronResponse> createRepeated() => $pb.PbList<ConsultarPatronResponse>();
   @$core.pragma('dart2js:noInline')
-  static ConsultarMarcasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarMarcasResponse>(create);
-  static ConsultarMarcasResponse? _defaultInstance;
+  static ConsultarPatronResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConsultarPatronResponse>(create);
+  static ConsultarPatronResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<Marcas> get data => $_getList(0);
+  $core.List<Patron> get data => $_getList(0);
 
   @$pb.TagNumber(2)
   $core.int get totalRowsCount => $_getIZ(1);
@@ -363,14 +364,14 @@ class ConsultarMarcasResponse extends $pb.GeneratedMessage {
   void clearLastKey() => clearField(6);
 }
 
-class DeleteMarcasRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteMarcasRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
+class DeletePatronRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeletePatronRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
-  DeleteMarcasRequest._() : super();
-  factory DeleteMarcasRequest({
+  DeletePatronRequest._() : super();
+  factory DeletePatronRequest({
     $core.String? id,
   }) {
     final _result = create();
@@ -379,26 +380,26 @@ class DeleteMarcasRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteMarcasRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteMarcasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeletePatronRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeletePatronRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteMarcasRequest clone() => DeleteMarcasRequest()..mergeFromMessage(this);
+  DeletePatronRequest clone() => DeletePatronRequest()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteMarcasRequest copyWith(void Function(DeleteMarcasRequest) updates) => super.copyWith((message) => updates(message as DeleteMarcasRequest)) as DeleteMarcasRequest; // ignore: deprecated_member_use
+  DeletePatronRequest copyWith(void Function(DeletePatronRequest) updates) => super.copyWith((message) => updates(message as DeletePatronRequest)) as DeletePatronRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteMarcasRequest create() => DeleteMarcasRequest._();
-  DeleteMarcasRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteMarcasRequest> createRepeated() => $pb.PbList<DeleteMarcasRequest>();
+  static DeletePatronRequest create() => DeletePatronRequest._();
+  DeletePatronRequest createEmptyInstance() => create();
+  static $pb.PbList<DeletePatronRequest> createRepeated() => $pb.PbList<DeletePatronRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteMarcasRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteMarcasRequest>(create);
-  static DeleteMarcasRequest? _defaultInstance;
+  static DeletePatronRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeletePatronRequest>(create);
+  static DeletePatronRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
@@ -410,8 +411,8 @@ class DeleteMarcasRequest extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 }
 
-class DeleteMarcasResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteMarcasResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
+class DeletePatronResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeletePatronResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -419,8 +420,8 @@ class DeleteMarcasResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false
   ;
 
-  DeleteMarcasResponse._() : super();
-  factory DeleteMarcasResponse({
+  DeletePatronResponse._() : super();
+  factory DeletePatronResponse({
     $core.String? data,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
@@ -441,26 +442,26 @@ class DeleteMarcasResponse extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory DeleteMarcasResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteMarcasResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DeletePatronResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeletePatronResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  DeleteMarcasResponse clone() => DeleteMarcasResponse()..mergeFromMessage(this);
+  DeletePatronResponse clone() => DeletePatronResponse()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  DeleteMarcasResponse copyWith(void Function(DeleteMarcasResponse) updates) => super.copyWith((message) => updates(message as DeleteMarcasResponse)) as DeleteMarcasResponse; // ignore: deprecated_member_use
+  DeletePatronResponse copyWith(void Function(DeletePatronResponse) updates) => super.copyWith((message) => updates(message as DeletePatronResponse)) as DeletePatronResponse; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static DeleteMarcasResponse create() => DeleteMarcasResponse._();
-  DeleteMarcasResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteMarcasResponse> createRepeated() => $pb.PbList<DeleteMarcasResponse>();
+  static DeletePatronResponse create() => DeletePatronResponse._();
+  DeletePatronResponse createEmptyInstance() => create();
+  static $pb.PbList<DeletePatronResponse> createRepeated() => $pb.PbList<DeletePatronResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteMarcasResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteMarcasResponse>(create);
-  static DeleteMarcasResponse? _defaultInstance;
+  static DeletePatronResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeletePatronResponse>(create);
+  static DeletePatronResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get data => $_getSZ(0);
@@ -493,29 +494,29 @@ class DeleteMarcasResponse extends $pb.GeneratedMessage {
   void clearErrorcode() => clearField(5);
 }
 
-class Marcas extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Marcas', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.marcassrv'), createEmptyInstance: create)
+class Patron extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Patron', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.patronsrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'parent')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'nombre')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'path')
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'childrens')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
-    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
-    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
-    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
+    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
+    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
+    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aInt64(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
-  Marcas._() : super();
-  factory Marcas({
+  Patron._() : super();
+  factory Patron({
     $core.String? parent,
     $core.String? nombre,
     $core.String? path,
-    $core.String? childrens,
     $core.String? jsonpathdata,
     $core.String? padrespath,
     $core.String? title,
     $core.String? urlimage,
+    $fixnum.Int64? id,
   }) {
     final _result = create();
     if (parent != null) {
@@ -526,9 +527,6 @@ class Marcas extends $pb.GeneratedMessage {
     }
     if (path != null) {
       _result.path = path;
-    }
-    if (childrens != null) {
-      _result.childrens = childrens;
     }
     if (jsonpathdata != null) {
       _result.jsonpathdata = jsonpathdata;
@@ -542,28 +540,31 @@ class Marcas extends $pb.GeneratedMessage {
     if (urlimage != null) {
       _result.urlimage = urlimage;
     }
+    if (id != null) {
+      _result.id = id;
+    }
     return _result;
   }
-  factory Marcas.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Marcas.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Patron.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Patron.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  Marcas clone() => Marcas()..mergeFromMessage(this);
+  Patron clone() => Patron()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Marcas copyWith(void Function(Marcas) updates) => super.copyWith((message) => updates(message as Marcas)) as Marcas; // ignore: deprecated_member_use
+  Patron copyWith(void Function(Patron) updates) => super.copyWith((message) => updates(message as Patron)) as Patron; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
-  static Marcas create() => Marcas._();
-  Marcas createEmptyInstance() => create();
-  static $pb.PbList<Marcas> createRepeated() => $pb.PbList<Marcas>();
+  static Patron create() => Patron._();
+  Patron createEmptyInstance() => create();
+  static $pb.PbList<Patron> createRepeated() => $pb.PbList<Patron>();
   @$core.pragma('dart2js:noInline')
-  static Marcas getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Marcas>(create);
-  static Marcas? _defaultInstance;
+  static Patron getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Patron>(create);
+  static Patron? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get parent => $_getSZ(0);
@@ -593,48 +594,48 @@ class Marcas extends $pb.GeneratedMessage {
   void clearPath() => clearField(3);
 
   @$pb.TagNumber(4)
-  $core.String get childrens => $_getSZ(3);
+  $core.String get jsonpathdata => $_getSZ(3);
   @$pb.TagNumber(4)
-  set childrens($core.String v) { $_setString(3, v); }
+  set jsonpathdata($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
-  $core.bool hasChildrens() => $_has(3);
+  $core.bool hasJsonpathdata() => $_has(3);
   @$pb.TagNumber(4)
-  void clearChildrens() => clearField(4);
+  void clearJsonpathdata() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.String get jsonpathdata => $_getSZ(4);
+  $core.String get padrespath => $_getSZ(4);
   @$pb.TagNumber(5)
-  set jsonpathdata($core.String v) { $_setString(4, v); }
+  set padrespath($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
-  $core.bool hasJsonpathdata() => $_has(4);
+  $core.bool hasPadrespath() => $_has(4);
   @$pb.TagNumber(5)
-  void clearJsonpathdata() => clearField(5);
+  void clearPadrespath() => clearField(5);
 
   @$pb.TagNumber(6)
-  $core.String get padrespath => $_getSZ(5);
+  $core.String get title => $_getSZ(5);
   @$pb.TagNumber(6)
-  set padrespath($core.String v) { $_setString(5, v); }
+  set title($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
-  $core.bool hasPadrespath() => $_has(5);
+  $core.bool hasTitle() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPadrespath() => clearField(6);
+  void clearTitle() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.String get title => $_getSZ(6);
+  $core.String get urlimage => $_getSZ(6);
   @$pb.TagNumber(7)
-  set title($core.String v) { $_setString(6, v); }
+  set urlimage($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
-  $core.bool hasTitle() => $_has(6);
+  $core.bool hasUrlimage() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTitle() => clearField(7);
+  void clearUrlimage() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.String get urlimage => $_getSZ(7);
+  $fixnum.Int64 get id => $_getI64(7);
   @$pb.TagNumber(8)
-  set urlimage($core.String v) { $_setString(7, v); }
+  set id($fixnum.Int64 v) { $_setInt64(7, v); }
   @$pb.TagNumber(8)
-  $core.bool hasUrlimage() => $_has(7);
+  $core.bool hasId() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUrlimage() => clearField(8);
+  void clearId() => clearField(8);
 }
 

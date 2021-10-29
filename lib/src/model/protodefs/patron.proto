@@ -1,0 +1,44 @@
+syntax = "proto3";
+import "lib/src/model/protodefs/filter.proto";
+import "lib/src/model/protodefs/shared.proto";
+package grpc.bits.io.patronsrv;
+
+service PatronSrv{
+    rpc AddUpdatePatron(AddUpdatePatronRequest) returns (AddUpdatePatronResponse);
+    rpc ConsultarPatron(grpc.bits.io.filter.FilterRequest) returns (ConsultarPatronResponse);
+    rpc DeletePatron(DeletePatronRequest) returns (DeletePatronResponse);
+        
+}
+message AddUpdatePatronRequest {Patron data= 1; Patron  origndata= 2; grpc.bits.io.shared.UserDataDetail userdata=3; grpc.bits.io.shared.DeletedInfo deletedinfo=4;}
+message AddUpdatePatronResponse {Patron data= 1;grpc.bits.io.shared.DeletedInfoResponse  deleteInfoResponse=2;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+message ConsultarPatronRequest {string queryStr= 1;}
+message ConsultarPatronResponse {repeated Patron data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6;}
+message DeletePatronRequest {string id= 1;}
+message DeletePatronResponse {string data= 1;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+
+ message Patron 
+{
+ string parent = 1;
+ string nombre = 2;
+ string path = 3;
+ string jsonpathdata = 4;
+ string padrespath = 5;
+ string title = 6;
+ string urlimage = 7;
+ int64 id = 8; 
+ } 
+  
+
+enum  SelectableColumnsPatron
+{
+  allColumns=0; 
+  parent = 1;
+  nombre = 2;
+  path = 3;
+  childrens = 4;
+  jsonpathdata = 5;
+  padrespath = 6;
+  title = 7;
+  urlimage = 8;
+  id = 9;}
+  

@@ -19,11 +19,11 @@ import 'dart:async';
 import 'package:categorias_grpc/auth/config.dart';
 import 'package:categorias_grpc/services/categorie_service.dart';
 import 'package:categorias_grpc/services/colores_service.dart';
-import 'package:categorias_grpc/services/generos_service.dart';
-import 'package:categorias_grpc/services/marcas_service.dart';
-import 'package:categorias_grpc/services/patrones_service.dart';
+import 'package:categorias_grpc/services/genero_service.dart';
+import 'package:categorias_grpc/services/marca_service.dart';
+import 'package:categorias_grpc/services/patron_service.dart';
 import 'package:categorias_grpc/services/producto_service.dart';
-import 'package:categorias_grpc/services/tallas_service.dart';
+import 'package:categorias_grpc/services/talla_service.dart';
 
 /// Dart implementation of the gRPC helloworld.Greeter server.
 import 'package:grpc/grpc.dart';
@@ -47,12 +47,12 @@ import 'package:riverpod/riverpod.dart';
 abstract class BitsServer {
   static final server = Server(
     [
-      CategorieSrv(),
+      CategoriesSrv(),
       ColoresSrv(),
-      GenerosSrv(),
-      MarcasSrv(),
-      PatronesSrv(),
-      TallasSrv(),
+      GeneroSrv(),
+      MarcaSrv(),
+      PatronSrv(),
+      TallaSrv(),
       ProductoSrv()
     ],
     <Interceptor>[],

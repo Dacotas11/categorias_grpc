@@ -19,6 +19,7 @@ class SelectableColumnsCategories extends $pb.ProtobufEnum {
   static const SelectableColumnsCategories padrespath = SelectableColumnsCategories._(6, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'padrespath');
   static const SelectableColumnsCategories title = SelectableColumnsCategories._(7, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'title');
   static const SelectableColumnsCategories urlimage = SelectableColumnsCategories._(8, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'urlimage');
+  static const SelectableColumnsCategories id = SelectableColumnsCategories._(9, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'id');
 
   static const $core.List<SelectableColumnsCategories> values = <SelectableColumnsCategories> [
     allColumns,
@@ -30,6 +31,7 @@ class SelectableColumnsCategories extends $pb.ProtobufEnum {
     padrespath,
     title,
     urlimage,
+    id,
   ];
 
   static final $core.Map<$core.int, SelectableColumnsCategories> _byValue = $pb.ProtobufEnum.initByValue(values);

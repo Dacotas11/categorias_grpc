@@ -1,0 +1,42 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+// import "google/protobuf/struct.proto";
+package grpc.bits.io.shared;
+
+message UserDataDetail 
+{
+    string userid = 1;
+    string username= 2;
+    string deviceinfo= 3;
+    string ipaddress= 4;
+    string manageuserid= 5;
+    string authtoken= 6;
+    google.protobuf.Timestamp authtime= 7;
+    string operation = 8;
+}
+message AuditInfo {
+repeated string tablas= 1;
+repeated string  operaciones= 2;
+}
+message Tabla {
+    string nombre = 1;
+}
+message Operacion {
+    string nombre = 1;
+}
+
+enum DeletedActions {
+    none =0 ;
+    onlymaster= 1;
+    onlydetail= 2;
+    masterdetail=3;
+}
+message DeletedInfo {
+    string deletekeys= 1;
+    DeletedActions deletedActions= 2;
+}
+
+message DeletedInfoResponse {
+    string deletekeys= 1;
+    DeletedActions deletedActions= 2;
+}

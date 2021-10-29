@@ -1,0 +1,34 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "lib/src/model/protodefs/filter.proto";
+import "lib/src/model/protodefs/shared.proto";
+package grpc.bits.io.generosrv;
+
+service GeneroSrv{
+    rpc AddUpdateGenero(AddUpdateGeneroRequest) returns (AddUpdateGeneroResponse);
+    rpc ConsultarGenero(grpc.bits.io.filter.FilterRequest) returns (ConsultarGeneroResponse);
+    rpc DeleteGenero(DeleteGeneroRequest) returns (DeleteGeneroResponse);
+        
+}
+message AddUpdateGeneroRequest {Genero data= 1; Genero  origndata= 2; grpc.bits.io.shared.UserDataDetail userdata=3; grpc.bits.io.shared.DeletedInfo deletedinfo=4;}
+message AddUpdateGeneroResponse {Genero data= 1;grpc.bits.io.shared.DeletedInfoResponse  deleteInfoResponse=2;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+message ConsultarGeneroRequest {string queryStr= 1;}
+message ConsultarGeneroResponse {repeated Genero data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6;}
+message DeleteGeneroRequest {string id= 1;}
+message DeleteGeneroResponse {string data= 1;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
+
+ message Genero 
+{
+ string id = 1;
+ string descripcion = 2;
+ int64 rowid = 3; 
+ } 
+  
+
+enum  SelectableColumnsGenero
+{
+  allColumns=0; 
+  id = 1;
+  descripcion = 2;
+  rowid = 3;}
+  
