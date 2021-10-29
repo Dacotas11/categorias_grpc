@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class PatronSrv extends PatronSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_patron.parent,np_patron.nombre,np_patron.path,np_patron.childrens,np_patron.jsonpathdata,np_patron.padrespath,np_patron.title,np_patron.urlimage,np_patron.id
+np_patron.parent,np_patron.nombre,np_patron.path,np_patron.jsonpathdata,np_patron.padrespath,np_patron.title,np_patron.urlimage,np_patron.id
  from dbo.np_patron    ''';
   @override
   Future<AddUpdatePatronResponse> addUpdatePatron(

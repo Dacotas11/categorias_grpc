@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class CategoriesSrv extends CategoriesSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-categories.parent,categories.nombre,categories.path,categories.childrens,categories.jsonpathdata,categories.padrespath,categories.title,categories.urlimage,categories.id
+categories.parent,categories.nombre,categories.path,categories.jsonpathdata,categories.padrespath,categories.title,categories.urlimage,categories.id
  from dbo.categories    ''';
   @override
   Future<AddUpdateCategoriesResponse> addUpdateCategories(

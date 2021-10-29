@@ -17,7 +17,7 @@ import 'dart:developer' as developer;
 class ColoresSrv extends ColoresSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_colores.parent,np_colores.nombre,np_colores.path,np_colores.childrens,np_colores.jsonpathdata,np_colores.padrespath,np_colores.title,np_colores.urlimage,np_colores.id
+np_colores.parent,np_colores.nombre,np_colores.path,np_colores.jsonpathdata,np_colores.padrespath,np_colores.title,np_colores.urlimage,np_colores.id
  from dbo.np_colores    ''';
   @override
   Future<AddUpdateColoresResponse> addUpdateColores(

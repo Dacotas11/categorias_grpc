@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class TallaSrv extends TallaSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_talla.parent,np_talla.nombre,np_talla.path,np_talla.childrens,np_talla.jsonpathdata,np_talla.padrespath,np_talla.title,np_talla.urlimage,np_talla.id
+np_talla.parent,np_talla.nombre,np_talla.path,np_talla.jsonpathdata,np_talla.padrespath,np_talla.title,np_talla.urlimage,np_talla.id
  from dbo.np_talla    ''';
   @override
   Future<AddUpdateTallaResponse> addUpdateTalla(
