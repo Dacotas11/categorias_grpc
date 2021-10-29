@@ -109,13 +109,14 @@ const Patron$json = const {
     const {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
     const {'1': 'nombre', '3': 2, '4': 1, '5': 9, '10': 'nombre'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
-    const {'1': 'jsonpathdata', '3': 4, '4': 1, '5': 9, '10': 'jsonpathdata'},
-    const {'1': 'padrespath', '3': 5, '4': 1, '5': 9, '10': 'padrespath'},
-    const {'1': 'title', '3': 6, '4': 1, '5': 9, '10': 'title'},
-    const {'1': 'urlimage', '3': 7, '4': 1, '5': 9, '10': 'urlimage'},
-    const {'1': 'id', '3': 8, '4': 1, '5': 3, '10': 'id'},
+    const {'1': 'childrens', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.Struct', '10': 'childrens'},
+    const {'1': 'jsonpathdata', '3': 5, '4': 1, '5': 9, '10': 'jsonpathdata'},
+    const {'1': 'padrespath', '3': 6, '4': 1, '5': 9, '10': 'padrespath'},
+    const {'1': 'title', '3': 7, '4': 1, '5': 9, '10': 'title'},
+    const {'1': 'urlimage', '3': 8, '4': 1, '5': 9, '10': 'urlimage'},
+    const {'1': 'id', '3': 9, '4': 1, '5': 3, '10': 'id'},
   ],
 };
 
 /// Descriptor for `Patron`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List patronDescriptor = $convert.base64Decode('CgZQYXRyb24SFgoGcGFyZW50GAEgASgJUgZwYXJlbnQSFgoGbm9tYnJlGAIgASgJUgZub21icmUSEgoEcGF0aBgDIAEoCVIEcGF0aBIiCgxqc29ucGF0aGRhdGEYBCABKAlSDGpzb25wYXRoZGF0YRIeCgpwYWRyZXNwYXRoGAUgASgJUgpwYWRyZXNwYXRoEhQKBXRpdGxlGAYgASgJUgV0aXRsZRIaCgh1cmxpbWFnZRgHIAEoCVIIdXJsaW1hZ2USDgoCaWQYCCABKANSAmlk');
+final $typed_data.Uint8List patronDescriptor = $convert.base64Decode('CgZQYXRyb24SFgoGcGFyZW50GAEgASgJUgZwYXJlbnQSFgoGbm9tYnJlGAIgASgJUgZub21icmUSEgoEcGF0aBgDIAEoCVIEcGF0aBI1CgljaGlsZHJlbnMYBCADKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0UgljaGlsZHJlbnMSIgoManNvbnBhdGhkYXRhGAUgASgJUgxqc29ucGF0aGRhdGESHgoKcGFkcmVzcGF0aBgGIAEoCVIKcGFkcmVzcGF0aBIUCgV0aXRsZRgHIAEoCVIFdGl0bGUSGgoIdXJsaW1hZ2UYCCABKAlSCHVybGltYWdlEg4KAmlkGAkgASgDUgJpZA==');

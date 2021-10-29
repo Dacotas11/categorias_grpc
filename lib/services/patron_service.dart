@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class PatronSrv extends PatronSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_patron.parent,np_patron.nombre,np_patron.path,np_patron.jsonpathdata,np_patron.padrespath,np_patron.title,np_patron.urlimage,np_patron.id
+np_patron.parent,np_patron.nombre,np_patron.path,np_patron.childrens,np_patron.jsonpathdata,np_patron.padrespath,np_patron.title,np_patron.urlimage,np_patron.id
  from dbo.np_patron    ''';
   @override
   Future<AddUpdatePatronResponse> addUpdatePatron(
@@ -88,12 +88,12 @@ np_patron.parent,np_patron.nombre,np_patron.path,np_patron.jsonpathdata,np_patro
     try {
       String sqlFilter = '';
       sqlFilter = buildFilter(Patron(), request, sqlFilter, 'id');
-
+      await Config.init();
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';
       var resultado = await database.query(queryStm);
       var data = resultado
-          .map((e) => Patron.create()..mergeFromProto3Json(e['np_patron']))
+          .map((e) => Patron.create()..mergeFromProto3Json(e['patron']))
           .toList();
       if (data.length < request.rowsPerPage) {
         response..totalRowsCount = data.length;

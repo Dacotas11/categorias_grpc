@@ -1,19 +1,19 @@
 syntax = "proto3";
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
 import "lib/src/model/protodefs/filter.proto";
 import "lib/src/model/protodefs/shared.proto";
-package grpc.bits.io.productosrv;
+package grpc.bits.io.productossrv;
 
-service ProductoSrv{
+service ProductosSrv{
     rpc AddUpdateProducto(AddUpdateProductoRequest) returns (AddUpdateProductoResponse);
     rpc ConsultarProducto(grpc.bits.io.filter.FilterRequest) returns (ConsultarProductoResponse);
     rpc DeleteProducto(DeleteProductoRequest) returns (DeleteProductoResponse);
-        
 }
 message AddUpdateProductoRequest {Producto data= 1; Producto  origndata= 2; grpc.bits.io.shared.UserDataDetail userdata=3; grpc.bits.io.shared.DeletedInfo deletedinfo=4;}
 message AddUpdateProductoResponse {Producto data= 1;grpc.bits.io.shared.DeletedInfoResponse  deleteInfoResponse=2;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
 message ConsultarProductoRequest {string queryStr= 1;}
-message ConsultarProductoResponse {repeated Producto data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6;}
+message ConsultarProductoResponse {repeated Producto data= 1;  int32 totalRowsCount = 2;   bool result = 3;  repeated string errorMessage = 4;int32 firstKey = 5;int32 lastKey = 6; repeated grpc.bits.io.filter.ClientFilterData filtersData=7; }
 message DeleteProductoRequest {string id= 1;}
 message DeleteProductoResponse {string data= 1;bool result = 3;  repeated string errorMessage = 4; string errorcode=5;}
 
@@ -67,18 +67,18 @@ message DeleteProductoResponse {string data= 1;bool result = 3;  repeated string
  string suplidor = 46;
  string marca = 47;
  int64 idproveedor = 48;
- double margen_fijo = 49;
- bool mostrar_en_gasto = 50;
- bool mostrar_en_facturacion = 51;
- string caracteristicas = 52;
- string imagen_url = 53;
- string unidad_inventario = 54;
- double factor_inventario = 55;
- int64 padre_id = 56;
- string document_vectors = 57;
- double factor_coversion_unidad = 58;
- int64 id_inventario = 59;
- string datos_json = 60; 
+ double factor_coversion_unidad = 49;
+ double margen_fijo = 50;
+ bool mostrar_en_gasto = 51;
+ bool mostrar_en_facturacion = 52;
+ google.protobuf.Struct caracteristicas = 53;
+ string imagen_url = 54;
+ string unidad_inventario = 55;
+ double factor_inventario = 56;
+ int64 padre_id = 57;
+ string document_vectors = 58;
+ string campo_disponible = 59; 
+ google.protobuf.Struct datos_json = 60;
  } 
   
 
@@ -133,16 +133,15 @@ enum  SelectableColumnsProducto
   suplidor = 46;
   marca = 47;
   idproveedor = 48;
-  margen_fijo = 49;
-  mostrar_en_gasto = 50;
-  mostrar_en_facturacion = 51;
-  caracteristicas = 52;
-  imagen_url = 53;
-  unidad_inventario = 54;
-  factor_inventario = 55;
-  padre_id = 56;
-  document_vectors = 57;
-  factor_coversion_unidad = 58;
-  id_inventario = 59;
-  datos_json = 60;}
+  factor_coversion_unidad = 49;
+  margen_fijo = 50;
+  mostrar_en_gasto = 51;
+  mostrar_en_facturacion = 52;
+  caracteristicas = 53;
+  imagen_url = 54;
+  unidad_inventario = 55;
+  factor_inventario = 56;
+  padre_id = 57;
+  document_vectors = 58;
+  campo_disponible = 59;}
   

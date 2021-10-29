@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class MarcaSrv extends MarcaSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_marca.parent,np_marca.nombre,np_marca.path,np_marca.jsonpathdata,np_marca.padrespath,np_marca.title,np_marca.urlimage,np_marca.id
+np_marca.parent,np_marca.nombre,np_marca.path,np_marca.childrens,np_marca.jsonpathdata,np_marca.padrespath,np_marca.title,np_marca.urlimage,np_marca.id
  from dbo.np_marca    ''';
   @override
   Future<AddUpdateMarcaResponse> addUpdateMarca(
@@ -88,12 +88,12 @@ np_marca.parent,np_marca.nombre,np_marca.path,np_marca.jsonpathdata,np_marca.pad
     try {
       String sqlFilter = '';
       sqlFilter = buildFilter(Marca(), request, sqlFilter, 'id');
-
+      await Config.init();
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';
       var resultado = await database.query(queryStm);
       var data = resultado
-          .map((e) => Marca.create()..mergeFromProto3Json(e['np_marca']))
+          .map((e) => Marca.create()..mergeFromProto3Json(e['marca']))
           .toList();
       if (data.length < request.rowsPerPage) {
         response..totalRowsCount = data.length;

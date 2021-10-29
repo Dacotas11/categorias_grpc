@@ -16,7 +16,7 @@ import 'dart:developer' as developer;
 class TallaSrv extends TallaSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_talla.parent,np_talla.nombre,np_talla.path,np_talla.jsonpathdata,np_talla.padrespath,np_talla.title,np_talla.urlimage,np_talla.id
+np_talla.parent,np_talla.nombre,np_talla.path,np_talla.childrens,np_talla.jsonpathdata,np_talla.padrespath,np_talla.title,np_talla.urlimage,np_talla.id
  from dbo.np_talla    ''';
   @override
   Future<AddUpdateTallaResponse> addUpdateTalla(
@@ -88,12 +88,12 @@ np_talla.parent,np_talla.nombre,np_talla.path,np_talla.jsonpathdata,np_talla.pad
     try {
       String sqlFilter = '';
       sqlFilter = buildFilter(Talla(), request, sqlFilter, 'id');
-
+      await Config.init();
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';
       var resultado = await database.query(queryStm);
       var data = resultado
-          .map((e) => Talla.create()..mergeFromProto3Json(e['np_talla']))
+          .map((e) => Talla.create()..mergeFromProto3Json(e['talla']))
           .toList();
       if (data.length < request.rowsPerPage) {
         response..totalRowsCount = data.length;

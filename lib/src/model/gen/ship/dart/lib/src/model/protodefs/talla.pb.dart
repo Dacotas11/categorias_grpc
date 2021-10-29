@@ -11,6 +11,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'shared.pb.dart' as $18;
+import '../../../../google/protobuf/struct.pb.dart' as $16;
 
 export 'talla.pbenum.dart';
 
@@ -499,11 +500,12 @@ class Talla extends $pb.GeneratedMessage {
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'parent')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'nombre')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'path')
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
-    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
-    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
-    ..aInt64(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
+    ..pc<$16.Struct>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'childrens', $pb.PbFieldType.PM, subBuilder: $16.Struct.create)
+    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpathdata')
+    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padrespath')
+    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
+    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urlimage')
+    ..aInt64(9, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
@@ -512,6 +514,7 @@ class Talla extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? nombre,
     $core.String? path,
+    $core.Iterable<$16.Struct>? childrens,
     $core.String? jsonpathdata,
     $core.String? padrespath,
     $core.String? title,
@@ -527,6 +530,9 @@ class Talla extends $pb.GeneratedMessage {
     }
     if (path != null) {
       _result.path = path;
+    }
+    if (childrens != null) {
+      _result.childrens.addAll(childrens);
     }
     if (jsonpathdata != null) {
       _result.jsonpathdata = jsonpathdata;
@@ -594,48 +600,51 @@ class Talla extends $pb.GeneratedMessage {
   void clearPath() => clearField(3);
 
   @$pb.TagNumber(4)
-  $core.String get jsonpathdata => $_getSZ(3);
-  @$pb.TagNumber(4)
-  set jsonpathdata($core.String v) { $_setString(3, v); }
-  @$pb.TagNumber(4)
-  $core.bool hasJsonpathdata() => $_has(3);
-  @$pb.TagNumber(4)
-  void clearJsonpathdata() => clearField(4);
+  $core.List<$16.Struct> get childrens => $_getList(3);
 
   @$pb.TagNumber(5)
-  $core.String get padrespath => $_getSZ(4);
+  $core.String get jsonpathdata => $_getSZ(4);
   @$pb.TagNumber(5)
-  set padrespath($core.String v) { $_setString(4, v); }
+  set jsonpathdata($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
-  $core.bool hasPadrespath() => $_has(4);
+  $core.bool hasJsonpathdata() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPadrespath() => clearField(5);
+  void clearJsonpathdata() => clearField(5);
 
   @$pb.TagNumber(6)
-  $core.String get title => $_getSZ(5);
+  $core.String get padrespath => $_getSZ(5);
   @$pb.TagNumber(6)
-  set title($core.String v) { $_setString(5, v); }
+  set padrespath($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
-  $core.bool hasTitle() => $_has(5);
+  $core.bool hasPadrespath() => $_has(5);
   @$pb.TagNumber(6)
-  void clearTitle() => clearField(6);
+  void clearPadrespath() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.String get urlimage => $_getSZ(6);
+  $core.String get title => $_getSZ(6);
   @$pb.TagNumber(7)
-  set urlimage($core.String v) { $_setString(6, v); }
+  set title($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
-  $core.bool hasUrlimage() => $_has(6);
+  $core.bool hasTitle() => $_has(6);
   @$pb.TagNumber(7)
-  void clearUrlimage() => clearField(7);
+  void clearTitle() => clearField(7);
 
   @$pb.TagNumber(8)
-  $fixnum.Int64 get id => $_getI64(7);
+  $core.String get urlimage => $_getSZ(7);
   @$pb.TagNumber(8)
-  set id($fixnum.Int64 v) { $_setInt64(7, v); }
+  set urlimage($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
-  $core.bool hasId() => $_has(7);
+  $core.bool hasUrlimage() => $_has(7);
   @$pb.TagNumber(8)
-  void clearId() => clearField(8);
+  void clearUrlimage() => clearField(8);
+
+  @$pb.TagNumber(9)
+  $fixnum.Int64 get id => $_getI64(8);
+  @$pb.TagNumber(9)
+  set id($fixnum.Int64 v) { $_setInt64(8, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasId() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearId() => clearField(9);
 }
 

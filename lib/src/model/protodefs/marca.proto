@@ -1,4 +1,5 @@
 syntax = "proto3";
+import "google/protobuf/struct.proto";
 import "lib/src/model/protodefs/filter.proto";
 import "lib/src/model/protodefs/shared.proto";
 package grpc.bits.io.marcasrv;
@@ -21,11 +22,12 @@ message DeleteMarcaResponse {string data= 1;bool result = 3;  repeated string er
  string parent = 1;
  string nombre = 2;
  string path = 3;
- string jsonpathdata = 4;
- string padrespath = 5;
- string title = 6;
- string urlimage = 7;
- int64 id = 8; 
+ repeated google.protobuf.Struct childrens = 4;
+ string jsonpathdata = 5;
+ string padrespath = 6;
+ string title = 7;
+ string urlimage = 8;
+ int64 id = 9; 
  } 
   
 

@@ -109,13 +109,14 @@ const Colores$json = const {
     const {'1': 'parent', '3': 1, '4': 1, '5': 9, '10': 'parent'},
     const {'1': 'nombre', '3': 2, '4': 1, '5': 9, '10': 'nombre'},
     const {'1': 'path', '3': 3, '4': 1, '5': 9, '10': 'path'},
-    const {'1': 'jsonpathdata', '3': 4, '4': 1, '5': 9, '10': 'jsonpathdata'},
-    const {'1': 'padrespath', '3': 5, '4': 1, '5': 9, '10': 'padrespath'},
-    const {'1': 'title', '3': 6, '4': 1, '5': 9, '10': 'title'},
-    const {'1': 'urlimage', '3': 7, '4': 1, '5': 9, '10': 'urlimage'},
-    const {'1': 'id', '3': 8, '4': 1, '5': 3, '10': 'id'},
+    const {'1': 'childrens', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.Struct', '10': 'childrens'},
+    const {'1': 'jsonpathdata', '3': 5, '4': 1, '5': 9, '10': 'jsonpathdata'},
+    const {'1': 'padrespath', '3': 6, '4': 1, '5': 9, '10': 'padrespath'},
+    const {'1': 'title', '3': 7, '4': 1, '5': 9, '10': 'title'},
+    const {'1': 'urlimage', '3': 8, '4': 1, '5': 9, '10': 'urlimage'},
+    const {'1': 'id', '3': 9, '4': 1, '5': 3, '10': 'id'},
   ],
 };
 
 /// Descriptor for `Colores`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List coloresDescriptor = $convert.base64Decode('CgdDb2xvcmVzEhYKBnBhcmVudBgBIAEoCVIGcGFyZW50EhYKBm5vbWJyZRgCIAEoCVIGbm9tYnJlEhIKBHBhdGgYAyABKAlSBHBhdGgSIgoManNvbnBhdGhkYXRhGAQgASgJUgxqc29ucGF0aGRhdGESHgoKcGFkcmVzcGF0aBgFIAEoCVIKcGFkcmVzcGF0aBIUCgV0aXRsZRgGIAEoCVIFdGl0bGUSGgoIdXJsaW1hZ2UYByABKAlSCHVybGltYWdlEg4KAmlkGAggASgDUgJpZA==');
+final $typed_data.Uint8List coloresDescriptor = $convert.base64Decode('CgdDb2xvcmVzEhYKBnBhcmVudBgBIAEoCVIGcGFyZW50EhYKBm5vbWJyZRgCIAEoCVIGbm9tYnJlEhIKBHBhdGgYAyABKAlSBHBhdGgSNQoJY2hpbGRyZW5zGAQgAygLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdFIJY2hpbGRyZW5zEiIKDGpzb25wYXRoZGF0YRgFIAEoCVIManNvbnBhdGhkYXRhEh4KCnBhZHJlc3BhdGgYBiABKAlSCnBhZHJlc3BhdGgSFAoFdGl0bGUYByABKAlSBXRpdGxlEhoKCHVybGltYWdlGAggASgJUgh1cmxpbWFnZRIOCgJpZBgJIAEoA1ICaWQ=');

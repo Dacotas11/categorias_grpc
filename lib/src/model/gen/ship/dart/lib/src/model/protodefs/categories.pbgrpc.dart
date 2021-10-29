@@ -1,6 +1,6 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/categorie.proto
+//  source: lib/src/model/protodefs/categories.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
@@ -10,9 +10,9 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'categorie.pb.dart' as $3;
+import 'categories.pb.dart' as $3;
 import 'filter.pb.dart' as $1;
-export 'categorie.pb.dart';
+export 'categories.pb.dart';
 
 class CategoriesSrvClient extends $grpc.Client {
   static final _$addUpdateCategories = $grpc.ClientMethod<

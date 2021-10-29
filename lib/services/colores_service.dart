@@ -8,7 +8,6 @@ import 'package:categorias_grpc/top_level_providers.dart';
 import 'package:grpc/grpc.dart';
 import 'package:fixnum/fixnum.dart';
 import 'dart:developer' as developer;
-
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/colores.pb.dart';
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/colores.pbgrpc.dart';
 //export 'package:bitsgrpcserversrc/model/gen/ship/dart/colores.pbenum.dart';
@@ -17,7 +16,7 @@ import 'dart:developer' as developer;
 class ColoresSrv extends ColoresSrvServiceBase {
   Map<String, dynamic> params = {};
   String queryBase = ''' Select    
-np_colores.parent,np_colores.nombre,np_colores.path,np_colores.jsonpathdata,np_colores.padrespath,np_colores.title,np_colores.urlimage,np_colores.id
+np_colores.parent,np_colores.nombre,np_colores.path,np_colores.childrens,np_colores.jsonpathdata,np_colores.padrespath,np_colores.title,np_colores.urlimage,np_colores.id
  from dbo.np_colores    ''';
   @override
   Future<AddUpdateColoresResponse> addUpdateColores(
@@ -89,12 +88,12 @@ np_colores.parent,np_colores.nombre,np_colores.path,np_colores.jsonpathdata,np_c
     try {
       String sqlFilter = '';
       sqlFilter = buildFilter(Colores(), request, sqlFilter, 'id');
-
+      await Config.init();
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';
       var resultado = await database.query(queryStm);
       var data = resultado
-          .map((e) => Colores.create()..mergeFromProto3Json(e['np_colores']))
+          .map((e) => Colores.create()..mergeFromProto3Json(e['colores']))
           .toList();
       if (data.length < request.rowsPerPage) {
         response..totalRowsCount = data.length;
