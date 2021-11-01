@@ -1,6 +1,6 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/producto.proto
+//  source: lib/src/model/protodefs/productos.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
@@ -59,18 +59,17 @@ class SelectableColumnsProducto extends $pb.ProtobufEnum {
   static const SelectableColumnsProducto suplidor = SelectableColumnsProducto._(46, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'suplidor');
   static const SelectableColumnsProducto marca = SelectableColumnsProducto._(47, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'marca');
   static const SelectableColumnsProducto idproveedor = SelectableColumnsProducto._(48, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'idproveedor');
-  static const SelectableColumnsProducto margen_fijo = SelectableColumnsProducto._(49, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'margen_fijo');
-  static const SelectableColumnsProducto mostrar_en_gasto = SelectableColumnsProducto._(50, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'mostrar_en_gasto');
-  static const SelectableColumnsProducto mostrar_en_facturacion = SelectableColumnsProducto._(51, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'mostrar_en_facturacion');
-  static const SelectableColumnsProducto caracteristicas = SelectableColumnsProducto._(52, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'caracteristicas');
-  static const SelectableColumnsProducto imagen_url = SelectableColumnsProducto._(53, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'imagen_url');
-  static const SelectableColumnsProducto unidad_inventario = SelectableColumnsProducto._(54, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'unidad_inventario');
-  static const SelectableColumnsProducto factor_inventario = SelectableColumnsProducto._(55, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'factor_inventario');
-  static const SelectableColumnsProducto padre_id = SelectableColumnsProducto._(56, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'padre_id');
-  static const SelectableColumnsProducto document_vectors = SelectableColumnsProducto._(57, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'document_vectors');
-  static const SelectableColumnsProducto factor_coversion_unidad = SelectableColumnsProducto._(58, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'factor_coversion_unidad');
-  static const SelectableColumnsProducto id_inventario = SelectableColumnsProducto._(59, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'id_inventario');
-  static const SelectableColumnsProducto datos_json = SelectableColumnsProducto._(60, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'datos_json');
+  static const SelectableColumnsProducto factor_coversion_unidad = SelectableColumnsProducto._(49, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'factor_coversion_unidad');
+  static const SelectableColumnsProducto margen_fijo = SelectableColumnsProducto._(50, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'margen_fijo');
+  static const SelectableColumnsProducto mostrar_en_gasto = SelectableColumnsProducto._(51, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'mostrar_en_gasto');
+  static const SelectableColumnsProducto mostrar_en_facturacion = SelectableColumnsProducto._(52, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'mostrar_en_facturacion');
+  static const SelectableColumnsProducto caracteristicas = SelectableColumnsProducto._(53, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'caracteristicas');
+  static const SelectableColumnsProducto imagen_url = SelectableColumnsProducto._(54, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'imagen_url');
+  static const SelectableColumnsProducto unidad_inventario = SelectableColumnsProducto._(55, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'unidad_inventario');
+  static const SelectableColumnsProducto factor_inventario = SelectableColumnsProducto._(56, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'factor_inventario');
+  static const SelectableColumnsProducto padre_id = SelectableColumnsProducto._(57, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'padre_id');
+  static const SelectableColumnsProducto document_vectors = SelectableColumnsProducto._(58, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'document_vectors');
+  static const SelectableColumnsProducto campo_disponible = SelectableColumnsProducto._(59, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'campo_disponible');
 
   static const $core.List<SelectableColumnsProducto> values = <SelectableColumnsProducto> [
     allColumns,
@@ -122,6 +121,7 @@ class SelectableColumnsProducto extends $pb.ProtobufEnum {
     suplidor,
     marca,
     idproveedor,
+    factor_coversion_unidad,
     margen_fijo,
     mostrar_en_gasto,
     mostrar_en_facturacion,
@@ -131,9 +131,7 @@ class SelectableColumnsProducto extends $pb.ProtobufEnum {
     factor_inventario,
     padre_id,
     document_vectors,
-    factor_coversion_unidad,
-    id_inventario,
-    datos_json,
+    campo_disponible,
   ];
 
   static final $core.Map<$core.int, SelectableColumnsProducto> _byValue = $pb.ProtobufEnum.initByValue(values);

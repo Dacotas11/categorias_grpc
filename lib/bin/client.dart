@@ -1,6 +1,6 @@
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/categories.pbgrpc.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/filter.pb.dart';
-import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/producto.pbgrpc.dart';
+import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/productos.pbgrpc.dart';
 import 'package:grpc/grpc.dart';
 
 void main(List<String> args) async {
@@ -15,7 +15,7 @@ void main(List<String> args) async {
           CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
     ),
   );
-  final stub = ProductoSrvClient(channel);
+  final stub = ProductosSrvClient(channel);
 
   List<WhereClause> where = [];
 

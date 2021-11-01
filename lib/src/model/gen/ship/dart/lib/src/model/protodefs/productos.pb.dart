@@ -1,6 +1,6 @@
 ///
 //  Generated code. Do not modify.
-//  source: lib/src/model/protodefs/producto.proto
+//  source: lib/src/model/protodefs/productos.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
@@ -10,18 +10,19 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shared.pb.dart' as $18;
-import '../../../../google/protobuf/timestamp.pb.dart' as $17;
-import '../../../../google/protobuf/struct.pb.dart' as $16;
+import 'shared.pb.dart' as $9;
+import 'filter.pb.dart' as $1;
+import '../../../../google/protobuf/timestamp.pb.dart' as $8;
+import '../../../../google/protobuf/struct.pb.dart' as $7;
 
-export 'producto.pbenum.dart';
+export 'productos.pbenum.dart';
 
 class AddUpdateProductoRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aOM<Producto>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Producto.create)
     ..aOM<Producto>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'origndata', subBuilder: Producto.create)
-    ..aOM<$18.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $18.UserDataDetail.create)
-    ..aOM<$18.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $18.DeletedInfo.create)
+    ..aOM<$9.UserDataDetail>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userdata', subBuilder: $9.UserDataDetail.create)
+    ..aOM<$9.DeletedInfo>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deletedinfo', subBuilder: $9.DeletedInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -29,8 +30,8 @@ class AddUpdateProductoRequest extends $pb.GeneratedMessage {
   factory AddUpdateProductoRequest({
     Producto? data,
     Producto? origndata,
-    $18.UserDataDetail? userdata,
-    $18.DeletedInfo? deletedinfo,
+    $9.UserDataDetail? userdata,
+    $9.DeletedInfo? deletedinfo,
   }) {
     final _result = create();
     if (data != null) {
@@ -91,32 +92,32 @@ class AddUpdateProductoRequest extends $pb.GeneratedMessage {
   Producto ensureOrigndata() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $18.UserDataDetail get userdata => $_getN(2);
+  $9.UserDataDetail get userdata => $_getN(2);
   @$pb.TagNumber(3)
-  set userdata($18.UserDataDetail v) { setField(3, v); }
+  set userdata($9.UserDataDetail v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserdata() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserdata() => clearField(3);
   @$pb.TagNumber(3)
-  $18.UserDataDetail ensureUserdata() => $_ensure(2);
+  $9.UserDataDetail ensureUserdata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $18.DeletedInfo get deletedinfo => $_getN(3);
+  $9.DeletedInfo get deletedinfo => $_getN(3);
   @$pb.TagNumber(4)
-  set deletedinfo($18.DeletedInfo v) { setField(4, v); }
+  set deletedinfo($9.DeletedInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeletedinfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeletedinfo() => clearField(4);
   @$pb.TagNumber(4)
-  $18.DeletedInfo ensureDeletedinfo() => $_ensure(3);
+  $9.DeletedInfo ensureDeletedinfo() => $_ensure(3);
 }
 
 class AddUpdateProductoResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AddUpdateProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aOM<Producto>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', subBuilder: Producto.create)
-    ..aOM<$18.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $18.DeletedInfoResponse.create)
+    ..aOM<$9.DeletedInfoResponse>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'deleteInfoResponse', protoName: 'deleteInfoResponse', subBuilder: $9.DeletedInfoResponse.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorcode')
@@ -126,7 +127,7 @@ class AddUpdateProductoResponse extends $pb.GeneratedMessage {
   AddUpdateProductoResponse._() : super();
   factory AddUpdateProductoResponse({
     Producto? data,
-    $18.DeletedInfoResponse? deleteInfoResponse,
+    $9.DeletedInfoResponse? deleteInfoResponse,
     $core.bool? result,
     $core.Iterable<$core.String>? errorMessage,
     $core.String? errorcode,
@@ -182,15 +183,15 @@ class AddUpdateProductoResponse extends $pb.GeneratedMessage {
   Producto ensureData() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $18.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
+  $9.DeletedInfoResponse get deleteInfoResponse => $_getN(1);
   @$pb.TagNumber(2)
-  set deleteInfoResponse($18.DeletedInfoResponse v) { setField(2, v); }
+  set deleteInfoResponse($9.DeletedInfoResponse v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeleteInfoResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeleteInfoResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $18.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
+  $9.DeletedInfoResponse ensureDeleteInfoResponse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.bool get result => $_getBF(2);
@@ -215,7 +216,7 @@ class AddUpdateProductoResponse extends $pb.GeneratedMessage {
 }
 
 class ConsultarProductoRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'queryStr', protoName: 'queryStr')
     ..hasRequiredFields = false
   ;
@@ -262,13 +263,14 @@ class ConsultarProductoRequest extends $pb.GeneratedMessage {
 }
 
 class ConsultarProductoResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ConsultarProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..pc<Producto>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: Producto.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'totalRowsCount', $pb.PbFieldType.O3, protoName: 'totalRowsCount')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
     ..a<$core.int>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'firstKey', $pb.PbFieldType.O3, protoName: 'firstKey')
     ..a<$core.int>(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'lastKey', $pb.PbFieldType.O3, protoName: 'lastKey')
+    ..pc<$1.ClientFilterData>(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'filtersData', $pb.PbFieldType.PM, protoName: 'filtersData', subBuilder: $1.ClientFilterData.create)
     ..hasRequiredFields = false
   ;
 
@@ -280,6 +282,7 @@ class ConsultarProductoResponse extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? errorMessage,
     $core.int? firstKey,
     $core.int? lastKey,
+    $core.Iterable<$1.ClientFilterData>? filtersData,
   }) {
     final _result = create();
     if (data != null) {
@@ -299,6 +302,9 @@ class ConsultarProductoResponse extends $pb.GeneratedMessage {
     }
     if (lastKey != null) {
       _result.lastKey = lastKey;
+    }
+    if (filtersData != null) {
+      _result.filtersData.addAll(filtersData);
     }
     return _result;
   }
@@ -364,10 +370,13 @@ class ConsultarProductoResponse extends $pb.GeneratedMessage {
   $core.bool hasLastKey() => $_has(5);
   @$pb.TagNumber(6)
   void clearLastKey() => clearField(6);
+
+  @$pb.TagNumber(7)
+  $core.List<$1.ClientFilterData> get filtersData => $_getList(6);
 }
 
 class DeleteProductoRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteProductoRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
@@ -414,7 +423,7 @@ class DeleteProductoRequest extends $pb.GeneratedMessage {
 }
 
 class DeleteProductoResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'DeleteProductoResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data')
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'result')
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'errorMessage', protoName: 'errorMessage')
@@ -497,7 +506,7 @@ class DeleteProductoResponse extends $pb.GeneratedMessage {
 }
 
 class Producto extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Producto', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productosrv'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Producto', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.productossrv'), createEmptyInstance: create)
     ..aInt64(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodCod')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodTipoId')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodDesc')
@@ -517,7 +526,7 @@ class Producto extends $pb.GeneratedMessage {
     ..aOS(17, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'idsubcategoria')
     ..aOB(18, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodAceptaExistenciaNegativa')
     ..aOS(19, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'idimpuesto')
-    ..aOM<$17.Timestamp>(20, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodFechaActualizacion', subBuilder: $17.Timestamp.create)
+    ..aOM<$8.Timestamp>(20, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodFechaActualizacion', subBuilder: $8.Timestamp.create)
     ..a<$core.double>(21, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodPorcCostoIndirecto', $pb.PbFieldType.OD)
     ..a<$core.double>(22, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'prodUltCostoDirecto', $pb.PbFieldType.OD)
     ..aInt64(23, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'idtipoproducto')
@@ -546,18 +555,17 @@ class Producto extends $pb.GeneratedMessage {
     ..aOS(46, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'suplidor')
     ..aOS(47, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'marca')
     ..aInt64(48, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'idproveedor')
-    ..a<$core.double>(49, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'margenFijo', $pb.PbFieldType.OD)
-    ..aOB(50, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mostrarEnGasto')
-    ..aOB(51, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mostrarEnFacturacion')
-    ..aOM<$16.Struct>(52, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'caracteristicas', subBuilder: $16.Struct.create)
-    ..aOM<$16.Struct>(53, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'imagenUrl', subBuilder: $16.Struct.create)
-    ..aOS(54, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'unidadInventario')
-    ..a<$core.double>(55, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'factorInventario', $pb.PbFieldType.OD)
-    ..aInt64(56, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padreId')
-    ..aOS(57, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'documentVectors')
-    ..a<$core.double>(58, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'factorCoversionUnidad', $pb.PbFieldType.OD)
-    ..aInt64(59, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'idInventario')
-    ..aOM<$16.Struct>(60, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'datosJson', subBuilder: $16.Struct.create)
+    ..a<$core.double>(49, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'factorCoversionUnidad', $pb.PbFieldType.OD)
+    ..a<$core.double>(50, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'margenFijo', $pb.PbFieldType.OD)
+    ..aOB(51, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mostrarEnGasto')
+    ..aOB(52, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mostrarEnFacturacion')
+    ..aOM<$7.Struct>(53, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'caracteristicas', subBuilder: $7.Struct.create)
+    ..aOS(54, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'imagenUrl')
+    ..aOS(55, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'unidadInventario')
+    ..a<$core.double>(56, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'factorInventario', $pb.PbFieldType.OD)
+    ..aInt64(57, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'padreId')
+    ..aOS(58, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'documentVectors')
+    ..aOM<$7.Struct>(59, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'datosJson', subBuilder: $7.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -582,7 +590,7 @@ class Producto extends $pb.GeneratedMessage {
     $core.String? idsubcategoria,
     $core.bool? prodAceptaExistenciaNegativa,
     $core.String? idimpuesto,
-    $17.Timestamp? prodFechaActualizacion,
+    $8.Timestamp? prodFechaActualizacion,
     $core.double? prodPorcCostoIndirecto,
     $core.double? prodUltCostoDirecto,
     $fixnum.Int64? idtipoproducto,
@@ -611,18 +619,17 @@ class Producto extends $pb.GeneratedMessage {
     $core.String? suplidor,
     $core.String? marca,
     $fixnum.Int64? idproveedor,
+    $core.double? factorCoversionUnidad,
     $core.double? margenFijo,
     $core.bool? mostrarEnGasto,
     $core.bool? mostrarEnFacturacion,
-    $16.Struct? caracteristicas,
-    $16.Struct? imagenUrl,
+    $7.Struct? caracteristicas,
+    $core.String? imagenUrl,
     $core.String? unidadInventario,
     $core.double? factorInventario,
     $fixnum.Int64? padreId,
     $core.String? documentVectors,
-    $core.double? factorCoversionUnidad,
-    $fixnum.Int64? idInventario,
-    $16.Struct? datosJson,
+    $7.Struct? datosJson,
   }) {
     final _result = create();
     if (prodCod != null) {
@@ -769,6 +776,9 @@ class Producto extends $pb.GeneratedMessage {
     if (idproveedor != null) {
       _result.idproveedor = idproveedor;
     }
+    if (factorCoversionUnidad != null) {
+      _result.factorCoversionUnidad = factorCoversionUnidad;
+    }
     if (margenFijo != null) {
       _result.margenFijo = margenFijo;
     }
@@ -795,12 +805,6 @@ class Producto extends $pb.GeneratedMessage {
     }
     if (documentVectors != null) {
       _result.documentVectors = documentVectors;
-    }
-    if (factorCoversionUnidad != null) {
-      _result.factorCoversionUnidad = factorCoversionUnidad;
-    }
-    if (idInventario != null) {
-      _result.idInventario = idInventario;
     }
     if (datosJson != null) {
       _result.datosJson = datosJson;
@@ -1000,15 +1004,15 @@ class Producto extends $pb.GeneratedMessage {
   void clearIdimpuesto() => clearField(19);
 
   @$pb.TagNumber(20)
-  $17.Timestamp get prodFechaActualizacion => $_getN(19);
+  $8.Timestamp get prodFechaActualizacion => $_getN(19);
   @$pb.TagNumber(20)
-  set prodFechaActualizacion($17.Timestamp v) { setField(20, v); }
+  set prodFechaActualizacion($8.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasProdFechaActualizacion() => $_has(19);
   @$pb.TagNumber(20)
   void clearProdFechaActualizacion() => clearField(20);
   @$pb.TagNumber(20)
-  $17.Timestamp ensureProdFechaActualizacion() => $_ensure(19);
+  $8.Timestamp ensureProdFechaActualizacion() => $_ensure(19);
 
   @$pb.TagNumber(21)
   $core.double get prodPorcCostoIndirecto => $_getN(20);
@@ -1263,117 +1267,106 @@ class Producto extends $pb.GeneratedMessage {
   void clearIdproveedor() => clearField(48);
 
   @$pb.TagNumber(49)
-  $core.double get margenFijo => $_getN(48);
+  $core.double get factorCoversionUnidad => $_getN(48);
   @$pb.TagNumber(49)
-  set margenFijo($core.double v) { $_setDouble(48, v); }
+  set factorCoversionUnidad($core.double v) { $_setDouble(48, v); }
   @$pb.TagNumber(49)
-  $core.bool hasMargenFijo() => $_has(48);
+  $core.bool hasFactorCoversionUnidad() => $_has(48);
   @$pb.TagNumber(49)
-  void clearMargenFijo() => clearField(49);
+  void clearFactorCoversionUnidad() => clearField(49);
 
   @$pb.TagNumber(50)
-  $core.bool get mostrarEnGasto => $_getBF(49);
+  $core.double get margenFijo => $_getN(49);
   @$pb.TagNumber(50)
-  set mostrarEnGasto($core.bool v) { $_setBool(49, v); }
+  set margenFijo($core.double v) { $_setDouble(49, v); }
   @$pb.TagNumber(50)
-  $core.bool hasMostrarEnGasto() => $_has(49);
+  $core.bool hasMargenFijo() => $_has(49);
   @$pb.TagNumber(50)
-  void clearMostrarEnGasto() => clearField(50);
+  void clearMargenFijo() => clearField(50);
 
   @$pb.TagNumber(51)
-  $core.bool get mostrarEnFacturacion => $_getBF(50);
+  $core.bool get mostrarEnGasto => $_getBF(50);
   @$pb.TagNumber(51)
-  set mostrarEnFacturacion($core.bool v) { $_setBool(50, v); }
+  set mostrarEnGasto($core.bool v) { $_setBool(50, v); }
   @$pb.TagNumber(51)
-  $core.bool hasMostrarEnFacturacion() => $_has(50);
+  $core.bool hasMostrarEnGasto() => $_has(50);
   @$pb.TagNumber(51)
-  void clearMostrarEnFacturacion() => clearField(51);
+  void clearMostrarEnGasto() => clearField(51);
 
   @$pb.TagNumber(52)
-  $16.Struct get caracteristicas => $_getN(51);
+  $core.bool get mostrarEnFacturacion => $_getBF(51);
   @$pb.TagNumber(52)
-  set caracteristicas($16.Struct v) { setField(52, v); }
+  set mostrarEnFacturacion($core.bool v) { $_setBool(51, v); }
   @$pb.TagNumber(52)
-  $core.bool hasCaracteristicas() => $_has(51);
+  $core.bool hasMostrarEnFacturacion() => $_has(51);
   @$pb.TagNumber(52)
-  void clearCaracteristicas() => clearField(52);
-  @$pb.TagNumber(52)
-  $16.Struct ensureCaracteristicas() => $_ensure(51);
+  void clearMostrarEnFacturacion() => clearField(52);
 
   @$pb.TagNumber(53)
-  $16.Struct get imagenUrl => $_getN(52);
+  $7.Struct get caracteristicas => $_getN(52);
   @$pb.TagNumber(53)
-  set imagenUrl($16.Struct v) { setField(53, v); }
+  set caracteristicas($7.Struct v) { setField(53, v); }
   @$pb.TagNumber(53)
-  $core.bool hasImagenUrl() => $_has(52);
+  $core.bool hasCaracteristicas() => $_has(52);
   @$pb.TagNumber(53)
-  void clearImagenUrl() => clearField(53);
+  void clearCaracteristicas() => clearField(53);
   @$pb.TagNumber(53)
-  $16.Struct ensureImagenUrl() => $_ensure(52);
+  $7.Struct ensureCaracteristicas() => $_ensure(52);
 
   @$pb.TagNumber(54)
-  $core.String get unidadInventario => $_getSZ(53);
+  $core.String get imagenUrl => $_getSZ(53);
   @$pb.TagNumber(54)
-  set unidadInventario($core.String v) { $_setString(53, v); }
+  set imagenUrl($core.String v) { $_setString(53, v); }
   @$pb.TagNumber(54)
-  $core.bool hasUnidadInventario() => $_has(53);
+  $core.bool hasImagenUrl() => $_has(53);
   @$pb.TagNumber(54)
-  void clearUnidadInventario() => clearField(54);
+  void clearImagenUrl() => clearField(54);
 
   @$pb.TagNumber(55)
-  $core.double get factorInventario => $_getN(54);
+  $core.String get unidadInventario => $_getSZ(54);
   @$pb.TagNumber(55)
-  set factorInventario($core.double v) { $_setDouble(54, v); }
+  set unidadInventario($core.String v) { $_setString(54, v); }
   @$pb.TagNumber(55)
-  $core.bool hasFactorInventario() => $_has(54);
+  $core.bool hasUnidadInventario() => $_has(54);
   @$pb.TagNumber(55)
-  void clearFactorInventario() => clearField(55);
+  void clearUnidadInventario() => clearField(55);
 
   @$pb.TagNumber(56)
-  $fixnum.Int64 get padreId => $_getI64(55);
+  $core.double get factorInventario => $_getN(55);
   @$pb.TagNumber(56)
-  set padreId($fixnum.Int64 v) { $_setInt64(55, v); }
+  set factorInventario($core.double v) { $_setDouble(55, v); }
   @$pb.TagNumber(56)
-  $core.bool hasPadreId() => $_has(55);
+  $core.bool hasFactorInventario() => $_has(55);
   @$pb.TagNumber(56)
-  void clearPadreId() => clearField(56);
+  void clearFactorInventario() => clearField(56);
 
   @$pb.TagNumber(57)
-  $core.String get documentVectors => $_getSZ(56);
+  $fixnum.Int64 get padreId => $_getI64(56);
   @$pb.TagNumber(57)
-  set documentVectors($core.String v) { $_setString(56, v); }
+  set padreId($fixnum.Int64 v) { $_setInt64(56, v); }
   @$pb.TagNumber(57)
-  $core.bool hasDocumentVectors() => $_has(56);
+  $core.bool hasPadreId() => $_has(56);
   @$pb.TagNumber(57)
-  void clearDocumentVectors() => clearField(57);
+  void clearPadreId() => clearField(57);
 
   @$pb.TagNumber(58)
-  $core.double get factorCoversionUnidad => $_getN(57);
+  $core.String get documentVectors => $_getSZ(57);
   @$pb.TagNumber(58)
-  set factorCoversionUnidad($core.double v) { $_setDouble(57, v); }
+  set documentVectors($core.String v) { $_setString(57, v); }
   @$pb.TagNumber(58)
-  $core.bool hasFactorCoversionUnidad() => $_has(57);
+  $core.bool hasDocumentVectors() => $_has(57);
   @$pb.TagNumber(58)
-  void clearFactorCoversionUnidad() => clearField(58);
+  void clearDocumentVectors() => clearField(58);
 
   @$pb.TagNumber(59)
-  $fixnum.Int64 get idInventario => $_getI64(58);
+  $7.Struct get datosJson => $_getN(58);
   @$pb.TagNumber(59)
-  set idInventario($fixnum.Int64 v) { $_setInt64(58, v); }
+  set datosJson($7.Struct v) { setField(59, v); }
   @$pb.TagNumber(59)
-  $core.bool hasIdInventario() => $_has(58);
+  $core.bool hasDatosJson() => $_has(58);
   @$pb.TagNumber(59)
-  void clearIdInventario() => clearField(59);
-
-  @$pb.TagNumber(60)
-  $16.Struct get datosJson => $_getN(59);
-  @$pb.TagNumber(60)
-  set datosJson($16.Struct v) { setField(60, v); }
-  @$pb.TagNumber(60)
-  $core.bool hasDatosJson() => $_has(59);
-  @$pb.TagNumber(60)
-  void clearDatosJson() => clearField(60);
-  @$pb.TagNumber(60)
-  $16.Struct ensureDatosJson() => $_ensure(59);
+  void clearDatosJson() => clearField(59);
+  @$pb.TagNumber(59)
+  $7.Struct ensureDatosJson() => $_ensure(58);
 }
 
