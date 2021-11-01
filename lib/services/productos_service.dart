@@ -128,7 +128,8 @@ from dbo.productos
       var pattern2 = new RegExp(r'\prod_cod[><]\d*');
       String queryEstimate =
           queryStm.replaceAll(pattern, '').replaceAll(pattern2, 'prod_cod>0');
-      // var resultado = await database.query(queryStm);
+      // print(queryStm);
+      var resultado = await database.query(queryStm);
       List<ClientFilterData> clientFilters = [
         ClientFilterData()
           ..columnKey = 'categories'
@@ -141,18 +142,18 @@ from dbo.productos
           ..entityName = "productos"
           ..type = ClientFilterType.TYPE_MESSAGE,
         ClientFilterData()
-          ..columnKey = 'productos.caracteristicas.precio'
-          ..columnDisplayName = "precio'"
+          ..columnKey = 'productos.caracteristicas.color'
+          ..columnDisplayName = "color'"
           ..entityName = "productos"
           ..type = ClientFilterType.range
       ];
 
       int totalRowsCount = 0;
-      List<dynamic> resultado = [];
+      // List<dynamic> resultado = [];
       int? minKey;
       int? maxKey;
       List<Producto> data = [];
-      if (sqlFilter.contains('AND')) {
+      if (sqlFilter.isNotEmpty) {
         var resultado2 = await database.query(queryEstimate);
 
         int limit = (resultado2.length > request.rowsPerPage)
@@ -162,8 +163,9 @@ from dbo.productos
         // : resultado2.length;
         // print(resultado2.first);
 
-        resultado = [];
-        if (request.paginationHandle == PaginationHandle.next) {
+        // resultado = [];
+        if (request.paginationHandle == PaginationHandle.next ||
+            request.paginationHandle == PaginationHandle.firstime) {
           resultado = (limit > 0)
               ? resultado2
                   .where((row) =>
@@ -260,8 +262,8 @@ from dbo.productos
         print((element).prodCod);
       });
       response
-        ..firstKey = minKey!
-        ..lastKey = maxKey!
+        ..firstKey = minKey ?? 0
+        ..lastKey = maxKey ?? 0
         ..data.addAll(data)
         ..result = true;
     } catch (e) {
