@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:categorias_grpc/auth/config.dart';
-import 'package:categorias_grpc/src/model/gen/ship/dart/google/protobuf/struct.pb.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/filter.pb.dart';
 import 'package:postgres/postgres.dart';
+import 'package:proto_shared/google/protobuf/struct.pb.dart';
 
 class PostgreSqlDatabase {
   late PostgreSQLConnection connection;

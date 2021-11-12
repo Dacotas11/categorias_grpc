@@ -19,6 +19,9 @@ dependencies:
   dbcrypt: ^2.0.0
   intl: ^0.17.0
   dartx: ^0.7.1
+  fixnum: ^1.0.0
+  proto_shared:
+    git: https://github.com/Dacotas11/proto_shared
 dependency_overrides:
   protobuf:
     git: https://github.com/Dacotas11/andy_protobuf

@@ -5,7 +5,6 @@ import 'package:categorias_grpc/auth/config.dart';
 import 'package:categorias_grpc/auth/utils.dart';
 import 'package:categorias_grpc/deep_map.dart';
 import 'package:categorias_grpc/services/postgres_database.dart';
-import 'package:categorias_grpc/src/model/gen/ship/dart/google/protobuf/struct.pb.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/filter.pb.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/productos.pbgrpc.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/shared.pb.dart';
@@ -14,6 +13,8 @@ import 'package:grpc/grpc.dart';
 import 'package:fixnum/fixnum.dart';
 import 'dart:developer' as developer;
 import 'dart:math';
+
+import 'package:proto_shared/google/protobuf/struct.pb.dart';
 
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/productos.pb.dart';
 //export 'package:bitsgrpcserver/src/model/gen/ship/dart/productos.pbgrpc.dart';
@@ -53,6 +54,7 @@ from dbo.productos
       final database = container.read(postgresProviderDB);
       Map res = request.writeToJsonMap(useInserStm: true).entries.first.value;
       String constrainst = 'prod_cod';
+
       final clientFilters = [
         ClientFilterData()
           ..columnKey = 'caracteristicas'
@@ -73,6 +75,18 @@ from dbo.productos
       );
       String headerstm = insertStm[0]["header"].toString();
       String detailstm = insertStm[1]["detail"].toString();
+
+      // while (headerstm.contains('@@structHc:')) {
+      //   print('a');
+      //   final verificador = RegExp(r"'@@structHc:.{0,9}.{0,9}'");
+      //   final match = verificador.stringMatch(headerstm);
+      //   final hCode = match!.replaceAll('@@structHc:', '');
+      //   print(hCode);
+      //   final a = request.data.getTagNumber('datosJson');
+
+      //   break;
+      // }
+
       bool isDeleting = false;
       var stmdel = buildDeleteStm(
           request.deletedinfo, 'dbo.productos', 'prod_cod', 'dbo.', '');
@@ -120,7 +134,7 @@ from dbo.productos
       String sqlFilter = '';
 
       sqlFilter = buildFilter(Producto(), request, sqlFilter, 'prod_cod');
-      print(sqlFilter);
+      // print(sqlFilter);
       final database = container.read(postgresProviderDB);
       String queryStm = '$queryBase $sqlFilter';
 //remover limit y filtro de llave principal dpara mantener el query original y estimar el total de filas
@@ -184,7 +198,7 @@ from dbo.productos
           // sign = '<';
           // orderBy = orderBy.replaceAll('$key asc', '$key desc');
         }
-        print(' $limit ROWSET ${request.rowsOffKeyset}');
+        // print(' $limit ROWSET ${request.rowsOffKeyset}');
         // resultado = (limit > 0)
         //     ? resultado2
         //         .where((row) => row["productos"]["prod_cod"] > 2311)
@@ -277,9 +291,9 @@ from dbo.productos
         ..result = false
         ..errorMessage.add(e.toString());
     }
-    print(response.firstKey);
-    print(response.lastKey);
-    print(response.data.length);
+    // print(response.firstKey);
+    // print(response.lastKey);
+    // print(response.data.length);
     return response;
   }
 

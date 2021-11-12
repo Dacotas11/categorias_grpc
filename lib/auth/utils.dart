@@ -1,5 +1,5 @@
-import 'package:categorias_grpc/src/model/gen/ship/dart/google/protobuf/timestamp.pb.dart';
 import 'package:categorias_grpc/src/model/gen/ship/dart/lib/src/model/protodefs/shared.pb.dart';
+import 'package:proto_shared/google/protobuf/timestamp.pb.dart';
 
 import 'extensions.dart';
 import 'package:intl/intl.dart';

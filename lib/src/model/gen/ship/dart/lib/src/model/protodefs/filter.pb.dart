@@ -10,22 +10,68 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../google/protobuf/struct.pb.dart' as $8;
+import 'package:proto_shared/google/protobuf/struct.pb.dart' as $8;
 
 import 'filter.pbenum.dart';
 
 export 'filter.pbenum.dart';
 
 class FilterRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'FilterRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'query')
-    ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'rowsOffKeyset', $pb.PbFieldType.O3, protoName: 'rowsOffKeyset')
-    ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'rowsPerPage', $pb.PbFieldType.O3, protoName: 'rowsPerPage')
-    ..pc<WhereClause>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'whereClause', $pb.PbFieldType.PM, protoName: 'whereClause', subBuilder: WhereClause.create)
-    ..pc<OrderByOperator>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'orderBy', $pb.PbFieldType.PM, protoName: 'orderBy', subBuilder: OrderByOperator.create)
-    ..e<PaginationHandle>(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginationHandle', $pb.PbFieldType.OE, protoName: 'paginationHandle', defaultOrMaker: PaginationHandle.firstime, valueOf: PaginationHandle.valueOf, enumValues: PaginationHandle.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'FilterRequest',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..aOS(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'query')
+    ..a<$core.int>(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'rowsOffKeyset',
+        $pb.PbFieldType.O3,
+        protoName: 'rowsOffKeyset')
+    ..a<$core.int>(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'rowsPerPage',
+        $pb.PbFieldType.O3,
+        protoName: 'rowsPerPage')
+    ..pc<WhereClause>(
+        4,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'whereClause',
+        $pb.PbFieldType.PM,
+        protoName: 'whereClause',
+        subBuilder: WhereClause.create)
+    ..pc<OrderByOperator>(
+        5,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'orderBy',
+        $pb.PbFieldType.PM,
+        protoName: 'orderBy',
+        subBuilder: OrderByOperator.create)
+    ..e<PaginationHandle>(
+        6,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'paginationHandle',
+        $pb.PbFieldType.OE,
+        protoName: 'paginationHandle',
+        defaultOrMaker: PaginationHandle.firstime,
+        valueOf: PaginationHandle.valueOf,
+        enumValues: PaginationHandle.values)
+    ..hasRequiredFields = false;
 
   FilterRequest._() : super();
   factory FilterRequest({
@@ -57,31 +103,40 @@ class FilterRequest extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory FilterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FilterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory FilterRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FilterRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FilterRequest clone() => FilterRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FilterRequest copyWith(void Function(FilterRequest) updates) => super.copyWith((message) => updates(message as FilterRequest)) as FilterRequest; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FilterRequest copyWith(void Function(FilterRequest) updates) =>
+      super.copyWith((message) => updates(message as FilterRequest))
+          as FilterRequest; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static FilterRequest create() => FilterRequest._();
   FilterRequest createEmptyInstance() => create();
-  static $pb.PbList<FilterRequest> createRepeated() => $pb.PbList<FilterRequest>();
+  static $pb.PbList<FilterRequest> createRepeated() =>
+      $pb.PbList<FilterRequest>();
   @$core.pragma('dart2js:noInline')
-  static FilterRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FilterRequest>(create);
+  static FilterRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FilterRequest>(create);
   static FilterRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get query => $_getSZ(0);
   @$pb.TagNumber(1)
-  set query($core.String v) { $_setString(0, v); }
+  set query($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasQuery() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,7 +145,10 @@ class FilterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get rowsOffKeyset => $_getIZ(1);
   @$pb.TagNumber(2)
-  set rowsOffKeyset($core.int v) { $_setSignedInt32(1, v); }
+  set rowsOffKeyset($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRowsOffKeyset() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,7 +157,10 @@ class FilterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get rowsPerPage => $_getIZ(2);
   @$pb.TagNumber(3)
-  set rowsPerPage($core.int v) { $_setSignedInt32(2, v); }
+  set rowsPerPage($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRowsPerPage() => $_has(2);
   @$pb.TagNumber(3)
@@ -114,7 +175,10 @@ class FilterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PaginationHandle get paginationHandle => $_getN(5);
   @$pb.TagNumber(6)
-  set paginationHandle(PaginationHandle v) { setField(6, v); }
+  set paginationHandle(PaginationHandle v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasPaginationHandle() => $_has(5);
   @$pb.TagNumber(6)
@@ -122,14 +186,46 @@ class FilterRequest extends $pb.GeneratedMessage {
 }
 
 class FieldFilter extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'FieldFilter', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'fieldId', $pb.PbFieldType.O3, protoName: 'fieldId')
-    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'operator')
-    ..aOM<$8.Value>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'value1', subBuilder: $8.Value.create)
-    ..aOM<$8.Value>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'value2', subBuilder: $8.Value.create)
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'columnName', protoName: 'columnName')
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'FieldFilter',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'fieldId',
+        $pb.PbFieldType.O3,
+        protoName: 'fieldId')
+    ..aOS(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'operator')
+    ..aOM<$8.Value>(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'value1',
+        subBuilder: $8.Value.create)
+    ..aOM<$8.Value>(
+        4,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'value2',
+        subBuilder: $8.Value.create)
+    ..aOS(
+        5,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'columnName',
+        protoName: 'columnName')
+    ..hasRequiredFields = false;
 
   FieldFilter._() : super();
   factory FieldFilter({
@@ -157,31 +253,39 @@ class FieldFilter extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory FieldFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FieldFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory FieldFilter.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FieldFilter.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FieldFilter clone() => FieldFilter()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FieldFilter copyWith(void Function(FieldFilter) updates) => super.copyWith((message) => updates(message as FieldFilter)) as FieldFilter; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FieldFilter copyWith(void Function(FieldFilter) updates) =>
+      super.copyWith((message) => updates(message as FieldFilter))
+          as FieldFilter; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static FieldFilter create() => FieldFilter._();
   FieldFilter createEmptyInstance() => create();
   static $pb.PbList<FieldFilter> createRepeated() => $pb.PbList<FieldFilter>();
   @$core.pragma('dart2js:noInline')
-  static FieldFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FieldFilter>(create);
+  static FieldFilter getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FieldFilter>(create);
   static FieldFilter? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get fieldId => $_getIZ(0);
   @$pb.TagNumber(1)
-  set fieldId($core.int v) { $_setSignedInt32(0, v); }
+  set fieldId($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFieldId() => $_has(0);
   @$pb.TagNumber(1)
@@ -190,7 +294,10 @@ class FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get operator => $_getSZ(1);
   @$pb.TagNumber(2)
-  set operator($core.String v) { $_setString(1, v); }
+  set operator($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
@@ -199,7 +306,10 @@ class FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $8.Value get value1 => $_getN(2);
   @$pb.TagNumber(3)
-  set value1($8.Value v) { setField(3, v); }
+  set value1($8.Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValue1() => $_has(2);
   @$pb.TagNumber(3)
@@ -210,7 +320,10 @@ class FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $8.Value get value2 => $_getN(3);
   @$pb.TagNumber(4)
-  set value2($8.Value v) { setField(4, v); }
+  set value2($8.Value v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValue2() => $_has(3);
   @$pb.TagNumber(4)
@@ -221,7 +334,10 @@ class FieldFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get columnName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set columnName($core.String v) { $_setString(4, v); }
+  set columnName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasColumnName() => $_has(4);
   @$pb.TagNumber(5)
@@ -229,11 +345,32 @@ class FieldFilter extends $pb.GeneratedMessage {
 }
 
 class OrderByOperator extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'OrderByOperator', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'columnName', protoName: 'columnName')
-    ..e<OrderType>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'orderType', $pb.PbFieldType.OE, protoName: 'orderType', defaultOrMaker: OrderType.asc, valueOf: OrderType.valueOf, enumValues: OrderType.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'OrderByOperator',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..aOS(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'columnName',
+        protoName: 'columnName')
+    ..e<OrderType>(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'orderType',
+        $pb.PbFieldType.OE,
+        protoName: 'orderType',
+        defaultOrMaker: OrderType.asc,
+        valueOf: OrderType.valueOf,
+        enumValues: OrderType.values)
+    ..hasRequiredFields = false;
 
   OrderByOperator._() : super();
   factory OrderByOperator({
@@ -249,31 +386,40 @@ class OrderByOperator extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory OrderByOperator.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OrderByOperator.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory OrderByOperator.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OrderByOperator.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   OrderByOperator clone() => OrderByOperator()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OrderByOperator copyWith(void Function(OrderByOperator) updates) => super.copyWith((message) => updates(message as OrderByOperator)) as OrderByOperator; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OrderByOperator copyWith(void Function(OrderByOperator) updates) =>
+      super.copyWith((message) => updates(message as OrderByOperator))
+          as OrderByOperator; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static OrderByOperator create() => OrderByOperator._();
   OrderByOperator createEmptyInstance() => create();
-  static $pb.PbList<OrderByOperator> createRepeated() => $pb.PbList<OrderByOperator>();
+  static $pb.PbList<OrderByOperator> createRepeated() =>
+      $pb.PbList<OrderByOperator>();
   @$core.pragma('dart2js:noInline')
-  static OrderByOperator getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OrderByOperator>(create);
+  static OrderByOperator getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OrderByOperator>(create);
   static OrderByOperator? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get columnName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set columnName($core.String v) { $_setString(0, v); }
+  set columnName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasColumnName() => $_has(0);
   @$pb.TagNumber(1)
@@ -282,7 +428,10 @@ class OrderByOperator extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   OrderType get orderType => $_getN(1);
   @$pb.TagNumber(2)
-  set orderType(OrderType v) { setField(2, v); }
+  set orderType(OrderType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOrderType() => $_has(1);
   @$pb.TagNumber(2)
@@ -290,23 +439,113 @@ class OrderByOperator extends $pb.GeneratedMessage {
 }
 
 class WhereClause extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'WhereClause', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'fieldId', $pb.PbFieldType.O3, protoName: 'fieldId')
-    ..e<WhereOperator>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: WhereOperator.equals, valueOf: WhereOperator.valueOf, enumValues: WhereOperator.values)
-    ..aOM<$8.Value>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'value1', subBuilder: $8.Value.create)
-    ..aOM<$8.Value>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'value2', subBuilder: $8.Value.create)
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'columnName', protoName: 'columnName')
-    ..e<WhereConector>(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'conector', $pb.PbFieldType.OE, defaultOrMaker: WhereConector.none, valueOf: WhereConector.valueOf, enumValues: WhereConector.values)
-    ..aOS(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'label')
-    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tooltip')
-    ..aOS(9, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonpath')
-    ..e<WhereOptionView>(10, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'viewOption', $pb.PbFieldType.OE, protoName: 'viewOption', defaultOrMaker: WhereOptionView.nodefined, valueOf: WhereOptionView.valueOf, enumValues: WhereOptionView.values)
-    ..m<$core.String, $8.Value>(11, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'meta', entryClassName: 'WhereClause.MetaEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $8.Value.create, packageName: const $pb.PackageName('grpc.bits.io.filter'))
-    ..aOS(12, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'selectedValue', protoName: 'selectedValue')
-    ..aOS(13, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'jsonFieldKey', protoName: 'jsonFieldKey')
-    ..a<$core.int>(14, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'filterIndex', $pb.PbFieldType.O3, protoName: 'filterIndex')
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'WhereClause',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'fieldId',
+        $pb.PbFieldType.O3,
+        protoName: 'fieldId')
+    ..e<WhereOperator>(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'operator',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: WhereOperator.equals,
+        valueOf: WhereOperator.valueOf,
+        enumValues: WhereOperator.values)
+    ..aOM<$8.Value>(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'value1',
+        subBuilder: $8.Value.create)
+    ..aOM<$8.Value>(
+        4,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'value2',
+        subBuilder: $8.Value.create)
+    ..aOS(
+        5,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'columnName',
+        protoName: 'columnName')
+    ..e<WhereConector>(
+        6,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'conector',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: WhereConector.none,
+        valueOf: WhereConector.valueOf,
+        enumValues: WhereConector.values)
+    ..aOS(
+        7,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'label')
+    ..aOS(
+        8,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'tooltip')
+    ..aOS(
+        9,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'jsonpath')
+    ..e<WhereOptionView>(
+        10,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'viewOption',
+        $pb.PbFieldType.OE,
+        protoName: 'viewOption',
+        defaultOrMaker: WhereOptionView.nodefined,
+        valueOf: WhereOptionView.valueOf,
+        enumValues: WhereOptionView.values)
+    ..m<$core.String, $8.Value>(
+        11,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'meta',
+        entryClassName: 'WhereClause.MetaEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $8.Value.create,
+        packageName: const $pb.PackageName('grpc.bits.io.filter'))
+    ..aOS(
+        12,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'selectedValue',
+        protoName: 'selectedValue')
+    ..aOS(
+        13,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'jsonFieldKey',
+        protoName: 'jsonFieldKey')
+    ..a<$core.int>(
+        14,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'filterIndex',
+        $pb.PbFieldType.O3,
+        protoName: 'filterIndex')
+    ..hasRequiredFields = false;
 
   WhereClause._() : super();
   factory WhereClause({
@@ -370,31 +609,39 @@ class WhereClause extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory WhereClause.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WhereClause.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory WhereClause.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WhereClause.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   WhereClause clone() => WhereClause()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WhereClause copyWith(void Function(WhereClause) updates) => super.copyWith((message) => updates(message as WhereClause)) as WhereClause; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WhereClause copyWith(void Function(WhereClause) updates) =>
+      super.copyWith((message) => updates(message as WhereClause))
+          as WhereClause; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static WhereClause create() => WhereClause._();
   WhereClause createEmptyInstance() => create();
   static $pb.PbList<WhereClause> createRepeated() => $pb.PbList<WhereClause>();
   @$core.pragma('dart2js:noInline')
-  static WhereClause getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WhereClause>(create);
+  static WhereClause getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WhereClause>(create);
   static WhereClause? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get fieldId => $_getIZ(0);
   @$pb.TagNumber(1)
-  set fieldId($core.int v) { $_setSignedInt32(0, v); }
+  set fieldId($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFieldId() => $_has(0);
   @$pb.TagNumber(1)
@@ -403,7 +650,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   WhereOperator get operator => $_getN(1);
   @$pb.TagNumber(2)
-  set operator(WhereOperator v) { setField(2, v); }
+  set operator(WhereOperator v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
@@ -412,7 +662,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $8.Value get value1 => $_getN(2);
   @$pb.TagNumber(3)
-  set value1($8.Value v) { setField(3, v); }
+  set value1($8.Value v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasValue1() => $_has(2);
   @$pb.TagNumber(3)
@@ -423,7 +676,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $8.Value get value2 => $_getN(3);
   @$pb.TagNumber(4)
-  set value2($8.Value v) { setField(4, v); }
+  set value2($8.Value v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasValue2() => $_has(3);
   @$pb.TagNumber(4)
@@ -434,7 +690,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get columnName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set columnName($core.String v) { $_setString(4, v); }
+  set columnName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasColumnName() => $_has(4);
   @$pb.TagNumber(5)
@@ -443,7 +702,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   WhereConector get conector => $_getN(5);
   @$pb.TagNumber(6)
-  set conector(WhereConector v) { setField(6, v); }
+  set conector(WhereConector v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasConector() => $_has(5);
   @$pb.TagNumber(6)
@@ -452,7 +714,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get label => $_getSZ(6);
   @$pb.TagNumber(7)
-  set label($core.String v) { $_setString(6, v); }
+  set label($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasLabel() => $_has(6);
   @$pb.TagNumber(7)
@@ -461,7 +726,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get tooltip => $_getSZ(7);
   @$pb.TagNumber(8)
-  set tooltip($core.String v) { $_setString(7, v); }
+  set tooltip($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasTooltip() => $_has(7);
   @$pb.TagNumber(8)
@@ -470,7 +738,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get jsonpath => $_getSZ(8);
   @$pb.TagNumber(9)
-  set jsonpath($core.String v) { $_setString(8, v); }
+  set jsonpath($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasJsonpath() => $_has(8);
   @$pb.TagNumber(9)
@@ -479,7 +750,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   WhereOptionView get viewOption => $_getN(9);
   @$pb.TagNumber(10)
-  set viewOption(WhereOptionView v) { setField(10, v); }
+  set viewOption(WhereOptionView v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasViewOption() => $_has(9);
   @$pb.TagNumber(10)
@@ -491,7 +765,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get selectedValue => $_getSZ(11);
   @$pb.TagNumber(12)
-  set selectedValue($core.String v) { $_setString(11, v); }
+  set selectedValue($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasSelectedValue() => $_has(11);
   @$pb.TagNumber(12)
@@ -500,7 +777,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get jsonFieldKey => $_getSZ(12);
   @$pb.TagNumber(13)
-  set jsonFieldKey($core.String v) { $_setString(12, v); }
+  set jsonFieldKey($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasJsonFieldKey() => $_has(12);
   @$pb.TagNumber(13)
@@ -509,7 +789,10 @@ class WhereClause extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.int get filterIndex => $_getIZ(13);
   @$pb.TagNumber(14)
-  set filterIndex($core.int v) { $_setSignedInt32(13, v); }
+  set filterIndex($core.int v) {
+    $_setSignedInt32(13, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasFilterIndex() => $_has(13);
   @$pb.TagNumber(14)
@@ -517,17 +800,73 @@ class WhereClause extends $pb.GeneratedMessage {
 }
 
 class ClientFilterData extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ClientFilterData', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..aInt64(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'fielId', protoName: 'fielId')
-    ..e<ClientFilterType>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ClientFilterType.string, valueOf: ClientFilterType.valueOf, enumValues: ClientFilterType.values)
-    ..pc<HazMap>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', $pb.PbFieldType.PM, subBuilder: HazMap.create)
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'entityName', protoName: 'entityName')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'columnKey', protoName: 'columnKey')
-    ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'columnDisplayName', protoName: 'columnDisplayName')
-    ..m<$core.String, $8.Value>(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mappedData', protoName: 'mappedData', entryClassName: 'ClientFilterData.MappedDataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $8.Value.create, packageName: const $pb.PackageName('grpc.bits.io.filter'))
-    ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'filterDisPlayName', protoName: 'filterDisPlayName')
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'ClientFilterData',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..aInt64(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'fielId',
+        protoName: 'fielId')
+    ..e<ClientFilterType>(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'type',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: ClientFilterType.string,
+        valueOf: ClientFilterType.valueOf,
+        enumValues: ClientFilterType.values)
+    ..pc<HazMap>(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'data',
+        $pb.PbFieldType.PM,
+        subBuilder: HazMap.create)
+    ..aOS(
+        4,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'entityName',
+        protoName: 'entityName')
+    ..aOS(
+        5,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'columnKey',
+        protoName: 'columnKey')
+    ..aOS(
+        6,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'columnDisplayName',
+        protoName: 'columnDisplayName')
+    ..m<$core.String, $8.Value>(
+        7,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'mappedData',
+        protoName: 'mappedData',
+        entryClassName: 'ClientFilterData.MappedDataEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: $8.Value.create,
+        packageName: const $pb.PackageName('grpc.bits.io.filter'))
+    ..aOS(
+        8,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'filterDisPlayName',
+        protoName: 'filterDisPlayName')
+    ..hasRequiredFields = false;
 
   ClientFilterData._() : super();
   factory ClientFilterData({
@@ -567,31 +906,40 @@ class ClientFilterData extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory ClientFilterData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ClientFilterData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory ClientFilterData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ClientFilterData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ClientFilterData clone() => ClientFilterData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ClientFilterData copyWith(void Function(ClientFilterData) updates) => super.copyWith((message) => updates(message as ClientFilterData)) as ClientFilterData; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ClientFilterData copyWith(void Function(ClientFilterData) updates) =>
+      super.copyWith((message) => updates(message as ClientFilterData))
+          as ClientFilterData; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static ClientFilterData create() => ClientFilterData._();
   ClientFilterData createEmptyInstance() => create();
-  static $pb.PbList<ClientFilterData> createRepeated() => $pb.PbList<ClientFilterData>();
+  static $pb.PbList<ClientFilterData> createRepeated() =>
+      $pb.PbList<ClientFilterData>();
   @$core.pragma('dart2js:noInline')
-  static ClientFilterData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ClientFilterData>(create);
+  static ClientFilterData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ClientFilterData>(create);
   static ClientFilterData? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get fielId => $_getI64(0);
   @$pb.TagNumber(1)
-  set fielId($fixnum.Int64 v) { $_setInt64(0, v); }
+  set fielId($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFielId() => $_has(0);
   @$pb.TagNumber(1)
@@ -600,7 +948,10 @@ class ClientFilterData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ClientFilterType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type(ClientFilterType v) { setField(2, v); }
+  set type(ClientFilterType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -612,7 +963,10 @@ class ClientFilterData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get entityName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set entityName($core.String v) { $_setString(3, v); }
+  set entityName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasEntityName() => $_has(3);
   @$pb.TagNumber(4)
@@ -621,7 +975,10 @@ class ClientFilterData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get columnKey => $_getSZ(4);
   @$pb.TagNumber(5)
-  set columnKey($core.String v) { $_setString(4, v); }
+  set columnKey($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasColumnKey() => $_has(4);
   @$pb.TagNumber(5)
@@ -630,7 +987,10 @@ class ClientFilterData extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get columnDisplayName => $_getSZ(5);
   @$pb.TagNumber(6)
-  set columnDisplayName($core.String v) { $_setString(5, v); }
+  set columnDisplayName($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasColumnDisplayName() => $_has(5);
   @$pb.TagNumber(6)
@@ -642,7 +1002,10 @@ class ClientFilterData extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get filterDisPlayName => $_getSZ(7);
   @$pb.TagNumber(8)
-  set filterDisPlayName($core.String v) { $_setString(7, v); }
+  set filterDisPlayName($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasFilterDisPlayName() => $_has(7);
   @$pb.TagNumber(8)
@@ -650,10 +1013,25 @@ class ClientFilterData extends $pb.GeneratedMessage {
 }
 
 class HazMap extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'HazMap', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'grpc.bits.io.filter'), createEmptyInstance: create)
-    ..m<$core.String, $core.String>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'data', entryClassName: 'HazMap.DataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('grpc.bits.io.filter'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : 'HazMap',
+      package: const $pb.PackageName(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'grpc.bits.io.filter'),
+      createEmptyInstance: create)
+    ..m<$core.String, $core.String>(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_field_names')
+            ? ''
+            : 'data',
+        entryClassName: 'HazMap.DataEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('grpc.bits.io.filter'))
+    ..hasRequiredFields = false;
 
   HazMap._() : super();
   factory HazMap({
@@ -665,28 +1043,32 @@ class HazMap extends $pb.GeneratedMessage {
     }
     return _result;
   }
-  factory HazMap.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HazMap.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  factory HazMap.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HazMap.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   HazMap clone() => HazMap()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HazMap copyWith(void Function(HazMap) updates) => super.copyWith((message) => updates(message as HazMap)) as HazMap; // ignore: deprecated_member_use
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HazMap copyWith(void Function(HazMap) updates) =>
+      super.copyWith((message) => updates(message as HazMap))
+          as HazMap; // ignore: deprecated_member_use
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HazMap create() => HazMap._();
   HazMap createEmptyInstance() => create();
   static $pb.PbList<HazMap> createRepeated() => $pb.PbList<HazMap>();
   @$core.pragma('dart2js:noInline')
-  static HazMap getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HazMap>(create);
+  static HazMap getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HazMap>(create);
   static HazMap? _defaultInstance;
 
   @$pb.TagNumber(3)
   $core.Map<$core.String, $core.String> get data => $_getMap(0);
 }
-
