@@ -76,6 +76,7 @@ from dbo.productos
       String headerstm = insertStm[0]["header"].toString();
       String detailstm = insertStm[1]["detail"].toString();
 
+      headerstm = headerstm.replaceAll("''", 'default');
       // while (headerstm.contains('@@structHc:')) {
       //   print('a');
       //   final verificador = RegExp(r"'@@structHc:.{0,9}.{0,9}'");
