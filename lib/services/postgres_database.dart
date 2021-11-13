@@ -175,7 +175,7 @@ String buildFilter(
     String conector = getConector(filter.conector);
     if (value.isNotEmpty)
       sqlFilter = sqlFilter.isEmpty
-          ? ' $field  ${operator} $value $value2  '
+          ? ' $field  ${operator} $value $value2  $conector'
           : ' $sqlFilter $conector  $field ${operator}$value $value2   ';
   }
 
